@@ -1,58 +1,58 @@
 /*
-	±êÊ¶·û£º¾ÍÊÇ¸øÀà£¬½Ó¿Ú£¬·½·¨£¬±äÁ¿µÈÆðÃû×Ö¡£
+	æ ‡è¯†ç¬¦ï¼šå°±æ˜¯ç»™ç±»ï¼ŒæŽ¥å£ï¼Œæ–¹æ³•ï¼Œå˜é‡ç­‰èµ·åå­—ã€‚
 	
-	×é³É¹æÔò£º
-		A:Ó¢ÎÄ×ÖÄ¸´óÐ¡Ð´
-		B:Êý×Ö×Ö·û
-		C:$ºÍ_
+	ç»„æˆè§„åˆ™ï¼š
+		A:è‹±æ–‡å­—æ¯å¤§å°å†™
+		B:æ•°å­—å­—ç¬¦
+		C:$å’Œ_
 		
-	×¢ÒâÊÂÏî£º
-		A:²»ÄÜÒÔÊý×Ö¿ªÍ·
-		B:²»ÄÜÊÇJavaÖÐµÄ¹Ø¼ü×Ö
-		C:JavaÓïÑÔÑÏ¸ñÇø·Ö´óÐ¡Ð´
+	æ³¨æ„äº‹é¡¹ï¼š
+		A:ä¸èƒ½ä»¥æ•°å­—å¼€å¤´
+		B:ä¸èƒ½æ˜¯Javaä¸­çš„å…³é”®å­—
+		C:Javaè¯­è¨€ä¸¥æ ¼åŒºåˆ†å¤§å°å†™
 		
-	³£¼ûµÄÃüÃû¹æÔò£º¼ûÃûÖªÒâ
-		¾ÙÀý£ºÎÒÒª¶¨ÒåÒ»¸öÑ§ÉúÀà
+	å¸¸è§çš„å‘½åè§„åˆ™ï¼šè§åçŸ¥æ„
+		ä¸¾ä¾‹ï¼šæˆ‘è¦å®šä¹‰ä¸€ä¸ªå­¦ç”Ÿç±»
 			class Student {}
 			class S{}
 			
-		°ü£ºÆäÊµ¾ÍÊÇÎÄ¼þ¼Ð£¬ÓÃÓÚ°ÑÏàÍ¬µÄÀàÃû½øÐÐÇø·Ö
-			È«²¿Ð¡Ð´
+		åŒ…ï¼šå…¶å®žå°±æ˜¯æ–‡ä»¶å¤¹ï¼Œç”¨äºŽæŠŠç›¸åŒçš„ç±»åè¿›è¡ŒåŒºåˆ†
+			å…¨éƒ¨å°å†™
 		
-			µ¥¼¶£ºliuyi
-			¶à¼¶£ºcn.itcast
+			å•çº§ï¼šliuyi
+			å¤šçº§ï¼šcn.itcast
 				cn
 					itcast
 					
-		Àà»òÕß½Ó¿Ú£º
-			Ò»¸öµ¥´Ê£ºµ¥´ÊµÄÊ××ÖÄ¸±ØÐë´óÐ´
-				¾ÙÀý£ºStudent,Dog
-			¶à¸öµ¥´Ê£ºÃ¿¸öµ¥´ÊµÄÊ××ÖÄ¸±ØÐë´óÐ´
-				¾ÙÀý£ºHelloWorld,StudentName
+		ç±»æˆ–è€…æŽ¥å£ï¼š
+			ä¸€ä¸ªå•è¯ï¼šå•è¯çš„é¦–å­—æ¯å¿…é¡»å¤§å†™
+				ä¸¾ä¾‹ï¼šStudent,Dog
+			å¤šä¸ªå•è¯ï¼šæ¯ä¸ªå•è¯çš„é¦–å­—æ¯å¿…é¡»å¤§å†™
+				ä¸¾ä¾‹ï¼šHelloWorld,StudentName
 			
-		·½·¨»òÕß±äÁ¿£º
-			Ò»¸öµ¥´Ê£ºµ¥´ÊµÄÊ××ÖÄ¸Ð¡Ð´
-				¾ÙÀý£ºmain,age
-			¶à¸öµ¥´Ê£º´ÓµÚ¶þ¸öµ¥´Ê¿ªÊ¼£¬Ã¿¸öµ¥´ÊµÄÊ××ÖÄ¸´óÐ´
-				¾ÙÀý£ºstudentAge,showAllNames()
+		æ–¹æ³•æˆ–è€…å˜é‡ï¼š
+			ä¸€ä¸ªå•è¯ï¼šå•è¯çš„é¦–å­—æ¯å°å†™
+				ä¸¾ä¾‹ï¼šmain,age
+			å¤šä¸ªå•è¯ï¼šä»Žç¬¬äºŒä¸ªå•è¯å¼€å§‹ï¼Œæ¯ä¸ªå•è¯çš„é¦–å­—æ¯å¤§å†™
+				ä¸¾ä¾‹ï¼šstudentAge,showAllNames()
 				
-		³£Á¿£º
-			Ò»¸öµ¥´Ê£ºÈ«²¿´óÐ´
-				¾ÙÀý£ºPI
-			¶à¸öµ¥´Ê£ºÃ¿¸ö×ÖÄ¸¶¼´óÐ´£¬ÓÃ_¸ô¿ª
-				¾ÙÀý£ºSTUDENT_MAX_AGE
+		å¸¸é‡ï¼š
+			ä¸€ä¸ªå•è¯ï¼šå…¨éƒ¨å¤§å†™
+				ä¸¾ä¾‹ï¼šPI
+			å¤šä¸ªå•è¯ï¼šæ¯ä¸ªå­—æ¯éƒ½å¤§å†™ï¼Œç”¨_éš”å¼€
+				ä¸¾ä¾‹ï¼šSTUDENT_MAX_AGE
 		
 */
 class MakeNameDemo {
 	public static void main(String[] args) {
-		//ÕýÈ·×ö·¨
+		//æ­£ç¡®åšæ³•
 		int x = 100;
 		
-		//²»ÄÜÒÔÊý×Ö¿ªÍ·
+		//ä¸èƒ½ä»¥æ•°å­—å¼€å¤´
 		//int 1y = 100;
 		int y1 = 100;
 		
-		//²»ÄÜÊÇJavaÖÐµÄ¹Ø¼ü×Ö
+		//ä¸èƒ½æ˜¯Javaä¸­çš„å…³é”®å­—
 		//int public = 100;
 		int Public = 100;
 	}

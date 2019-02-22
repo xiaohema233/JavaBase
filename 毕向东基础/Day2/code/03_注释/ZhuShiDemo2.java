@@ -1,14 +1,14 @@
 /*
-	×¢ÊÍµÄ×÷ÓÃ£º
-		A:½âÊÍËµÃ÷³ÌĞò£¬Ìá¸ß³ÌĞòµÄÔÄ¶ÁĞÔ
-		B:¿ÉÒÔ°ïÖúÎÒÃÇµ÷ÊÔ³ÌĞò¡£
-			ºóÃæÎÒÃÇ»á½²½â¸ü¸ß¼¶µÄµ÷ÊÔ¡£
+	æ³¨é‡Šçš„ä½œç”¨ï¼š
+		A:è§£é‡Šè¯´æ˜ç¨‹åºï¼Œæé«˜ç¨‹åºçš„é˜…è¯»æ€§
+		B:å¯ä»¥å¸®åŠ©æˆ‘ä»¬è°ƒè¯•ç¨‹åºã€‚
+			åé¢æˆ‘ä»¬ä¼šè®²è§£æ›´é«˜çº§çš„è°ƒè¯•ã€‚
 */
 class ZhuShiDemo2 {
 	public static void main(String[] args) {
-		System.out.println("ÁÖÇàÏ¼");
-		System.out.println("Íõ×æÏÍ");
-		System.out.println("ÁõÒà·Æ");
-		System.out.println("·¶±ù±ù");
+		System.out.println("æ—é’éœ");
+		System.out.println("ç‹ç¥–è´¤");
+		System.out.println("åˆ˜äº¦è²");
+		System.out.println("èŒƒå†°å†°");
 	}
 }

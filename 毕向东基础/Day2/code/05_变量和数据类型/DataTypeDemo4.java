@@ -1,25 +1,25 @@
 /*
-	Ç¿ÖÆ×ª»»£º
-		´Ó´óµÄÊý¾ÝÀàÐÍµ½Ð¡µÄÊý¾ÝÀàÐÍ¡£
+	å¼ºåˆ¶è½¬æ¢ï¼š
+		ä»Žå¤§çš„æ•°æ®ç±»åž‹åˆ°å°çš„æ•°æ®ç±»åž‹ã€‚
 		
-		¸ñÊ½£º
-			Ä¿±êÊý¾ÝÀàÐÍ ±äÁ¿ = (Ä¿±êÊý¾ÝÀàÐÍ) (±»×ª»»µÄÊý¾Ý);
+		æ ¼å¼ï¼š
+			ç›®æ ‡æ•°æ®ç±»åž‹ å˜é‡ = (ç›®æ ‡æ•°æ®ç±»åž‹) (è¢«è½¬æ¢çš„æ•°æ®);
 			
-		×¢Òâ£º
-			²»ÒªËæÒâµÄÈ¥Ê¹ÓÃÇ¿ÖÆ×ª»»£¬ÒòÎªËüÒþº¬ÁË¾«¶ÈËðÊ§ÎÊÌâ¡£
+		æ³¨æ„ï¼š
+			ä¸è¦éšæ„çš„åŽ»ä½¿ç”¨å¼ºåˆ¶è½¬æ¢ï¼Œå› ä¸ºå®ƒéšå«äº†ç²¾åº¦æŸå¤±é—®é¢˜ã€‚
 */
 class DataTypeDemo4 {
 	public static void main(String[] args) {
 		byte a = 3;
 		int b = 4;
 		
-		//Õâ¸ö¿Ï¶¨Ã»ÓÐÎÊÌâ
+		//è¿™ä¸ªè‚¯å®šæ²¡æœ‰é—®é¢˜
 		//int c = a + b;
 		
 		//byte c = 7;
-		//Õâ¸öÊÇÓÐÎÊÌâµÄ
+		//è¿™ä¸ªæ˜¯æœ‰é—®é¢˜çš„
 		//byte c = a + b; 
-		//ÓÃÇ¿ÖÆÀàÐÍ×ª»»¸Ä½ø
+		//ç”¨å¼ºåˆ¶ç±»åž‹è½¬æ¢æ”¹è¿›
 		byte c = (byte) (a + b);
 		System.out.println(c);
 	}

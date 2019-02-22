@@ -1,7 +1,7 @@
 /*
-	¿´³ÌÐòÐ´½á¹û
-		×Ö·û´®Êý¾ÝºÍÆäËûÊý¾Ý×ö+£¬½á¹ûÊÇ×Ö·û´®ÀàÐÍ¡£
-		ÕâÀïµÄ+²»ÊÇ¼Ó·¨ÔËËã£¬¶øÊÇ×Ö·û´®Á¬½Ó·û¡£
+	çœ‹ç¨‹åºå†™ç»“æžœ
+		å­—ç¬¦ä¸²æ•°æ®å’Œå…¶ä»–æ•°æ®åš+ï¼Œç»“æžœæ˜¯å­—ç¬¦ä¸²ç±»åž‹ã€‚
+		è¿™é‡Œçš„+ä¸æ˜¯åŠ æ³•è¿ç®—ï¼Œè€Œæ˜¯å­—ç¬¦ä¸²è¿žæŽ¥ç¬¦ã€‚
 */
 class DataTypeDemo9 {
 	public static void main(String[] args) {

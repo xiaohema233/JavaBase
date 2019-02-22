@@ -1,31 +1,31 @@
 /*
-	ÐèÇó£ºÎÒ×¼±¸Ð´Ò»¸öjava³ÌÐò£¬°Ñ"HelloWorld"Õâ¾ä»°Êä³öÔÚ¿ØÖÆÌ¨
+	éœ€æ±‚ï¼šæˆ‘å‡†å¤‡å†™ä¸€ä¸ªjavaç¨‹åºï¼ŒæŠŠ"HelloWorld"è¿™å¥è¯è¾“å‡ºåœ¨æŽ§åˆ¶å°
 	
-	·ÖÎö£º
-		A:ÒªÐ´Ò»¸öJava³ÌÐò£¬±ØÐë¶¨ÒåÀà
-		B:°ÑÊý¾ÝÄÜ¹»Êä³ö£¬ËµÃ÷ÎÒÃÇµÄ³ÌÐòÊÇ¿ÉÒÔ¶ÀÁ¢ÔËÐÐµÄ£¬¶ø³ÌÐòÒª¶ÀÁ¢ÔËÐÐ£¬±ØÐë¶¨Òåmain·½·¨
-		C:°ÑÊý¾ÝÊä³öÔÚ¿ØÖÆÌ¨£¬±ØÐëÊ¹ÓÃÊä³öÓï¾ä
+	åˆ†æžï¼š
+		A:è¦å†™ä¸€ä¸ªJavaç¨‹åºï¼Œå¿…é¡»å®šä¹‰ç±»
+		B:æŠŠæ•°æ®èƒ½å¤Ÿè¾“å‡ºï¼Œè¯´æ˜Žæˆ‘ä»¬çš„ç¨‹åºæ˜¯å¯ä»¥ç‹¬ç«‹è¿è¡Œçš„ï¼Œè€Œç¨‹åºè¦ç‹¬ç«‹è¿è¡Œï¼Œå¿…é¡»å®šä¹‰mainæ–¹æ³•
+		C:æŠŠæ•°æ®è¾“å‡ºåœ¨æŽ§åˆ¶å°ï¼Œå¿…é¡»ä½¿ç”¨è¾“å‡ºè¯­å¥
 		
-	ÊµÏÖ£º
-		A:javaÓïÑÔÌá¹©ÁËÒ»¸ö¹Ø¼ü×Ö£ºclassÓÃÀ´¶¨ÒåÀà£¬ºóÃæ¸úµÄÊÇÀàÃû
-		B:main·½·¨µÄ¸ñÊ½ÊÇ¹Ì¶¨µÄ£º
+	å®žçŽ°ï¼š
+		A:javaè¯­è¨€æä¾›äº†ä¸€ä¸ªå…³é”®å­—ï¼šclassç”¨æ¥å®šä¹‰ç±»ï¼ŒåŽé¢è·Ÿçš„æ˜¯ç±»å
+		B:mainæ–¹æ³•çš„æ ¼å¼æ˜¯å›ºå®šçš„ï¼š
 			public static void main(String[] args) {
 			
 			}
-		C:Êä³öÓï¾äµÄ¸ñÊ½ÊÇ¹Ì¶¨µÄ£º
+		C:è¾“å‡ºè¯­å¥çš„æ ¼å¼æ˜¯å›ºå®šçš„ï¼š
 			System.out.println("HelloWorld");
-			"HelloWorld"Õâ¸öÄÚÈÝÊÇ¿ÉÒÔ¸Ä±äµÄ
+			"HelloWorld"è¿™ä¸ªå†…å®¹æ˜¯å¯ä»¥æ”¹å˜çš„
 */
 
-//ÕâÊÇÎÒµÄHelloWorld°¸Àý
+//è¿™æ˜¯æˆ‘çš„HelloWorldæ¡ˆä¾‹
 class HelloWorld {
 	/*
-		ÎªÁË³ÌÐòÄÜ¹»¶ÀÁ¢ÔËÐÐ£¬¶¨Òåmain·½·¨
-		main·½·¨ÊÇ³ÌÐòµÄÈë¿Ú
-		±»jvm×Ô¶¯µ÷ÓÃ
+		ä¸ºäº†ç¨‹åºèƒ½å¤Ÿç‹¬ç«‹è¿è¡Œï¼Œå®šä¹‰mainæ–¹æ³•
+		mainæ–¹æ³•æ˜¯ç¨‹åºçš„å…¥å£
+		è¢«jvmè‡ªåŠ¨è°ƒç”¨
 	*/
 	public static void main(String[] args) {
-		//ÎªÁË°ÑÊý¾ÝÏÔÊ¾ÔÚ¿ØÖÆÌ¨£¬ÎÒÃÇ¾ÍÊ¹ÓÃÁËÊä³öÓï¾ä
+		//ä¸ºäº†æŠŠæ•°æ®æ˜¾ç¤ºåœ¨æŽ§åˆ¶å°ï¼Œæˆ‘ä»¬å°±ä½¿ç”¨äº†è¾“å‡ºè¯­å¥
 		System.out.println("HelloWorld");
 	}
 }

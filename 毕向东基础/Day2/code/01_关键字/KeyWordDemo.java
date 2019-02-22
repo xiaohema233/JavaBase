@@ -1,11 +1,11 @@
 /*
-	�ؼ��֣���java���Ը����ض�����ĵ��ʡ�
+	关键字：被java语言赋予特定含义的单词。
 	
-	�ص㣺��ɹؼ��ֵ��ʵ���ĸȫ��Сд��
+	特点：组成关键字单词的字母全部小写。
 	
-	ע�⣺
-		A:goto��const�Ǳ�����
-		B:������Notepad++�����ĸ߼����±�����Թؼ��ֶ����������ɫ��ǡ�
+	注意：
+		A:goto和const是保留字
+		B:类似于Notepad++这样的高级记事本，针对关键字都有特殊的颜色标记。
 */
 class KeyWordDemo {
 	public static void main(String[] args) {
