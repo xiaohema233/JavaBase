@@ -26,15 +26,15 @@ public class ListIteratorDemo {
 
 		// ListIterator listIterator()
 		ListIterator lit = list.listIterator(); // 子类对象
-		// while (lit.hasNext()) {
-		// String s = (String) lit.next();
-		// System.out.println(s);
-		// }
-		// System.out.println("-----------------");
+		 while (lit.hasNext()) {
+		 String s = (String) lit.next();
+		 System.out.println(s);
+		 }
+		 System.out.println("-----------------");
 		
-		// System.out.println(lit.previous());
-		// System.out.println(lit.previous());
-		// System.out.println(lit.previous());
+		 System.out.println(lit.previous());
+		 System.out.println(lit.previous());
+		 System.out.println(lit.previous());
 		// NoSuchElementException
 		// System.out.println(lit.previous());
 
@@ -44,13 +44,13 @@ public class ListIteratorDemo {
 		}
 		System.out.println("-----------------");
 
-		// 迭代器
-		Iterator it = list.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-		System.out.println("-----------------");
+//		// 迭代器
+//		Iterator it = list.iterator();
+//		while (it.hasNext()) {
+//			String s = (String) it.next();
+//			System.out.println(s);
+//		}
+//		System.out.println("-----------------");
 
 	}
 }
