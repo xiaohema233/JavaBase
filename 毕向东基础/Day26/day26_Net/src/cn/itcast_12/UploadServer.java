@@ -11,20 +11,20 @@ import java.net.Socket;
 
 public class UploadServer {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨ç«¯çš„Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(11111);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó
-		Socket s = ss.accept();// ×èÈû
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
+		Socket s = ss.accept();// é˜»å¡
 
-		// ·â×°Í¨µÀÄÚµÄÁ÷
+		// å°è£…é€šé“å†…çš„æµ
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
-		// ·â×°ÎÄ±¾ÎÄ¼ş
+		// å°è£…æ–‡æœ¬æ–‡ä»¶
 		BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
 
 		String line = null;
-		while ((line = br.readLine()) != null) { // ×èÈû
+		while ((line = br.readLine()) != null) { // é˜»å¡
 		// if("over".equals(line)){
 		// break;
 		// }
@@ -33,14 +33,14 @@ public class UploadServer {
 			bw.flush();
 		}
 
-		// ¸ø³ö·´À¡
+		// ç»™å‡ºåé¦ˆ
 		BufferedWriter bwServer = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
-		bwServer.write("ÎÄ¼şÉÏ´«³É¹¦");
+		bwServer.write("æ–‡ä»¶ä¸Šä¼ æˆåŠŸ");
 		bwServer.newLine();
 		bwServer.flush();
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		bw.close();
 		s.close();
 	}

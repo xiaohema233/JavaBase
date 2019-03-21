@@ -15,14 +15,14 @@ public class ReceiveThread implements Runnable {
 	public void run() {
 		try {
 			while (true) {
-				// ´´½¨Ò»¸ö°ü¹ü
+				// åˆ›å»ºä¸€ä¸ªåŒ…è£¹
 				byte[] bys = new byte[1024];
 				DatagramPacket dp = new DatagramPacket(bys, bys.length);
 
-				// ½ÓÊÕÊı¾İ
+				// æ¥æ”¶æ•°æ®
 				ds.receive(dp);
 
-				// ½âÎöÊı¾İ
+				// è§£ææ•°æ®
 				String ip = dp.getAddress().getHostAddress();
 				String s = new String(dp.getData(), 0, dp.getLength());
 				System.out.println("from " + ip + " data is : " + s);

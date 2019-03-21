@@ -9,51 +9,51 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /*
- * °´ÕÕÎÒÃÇÕı³£µÄË¼Â·¼ÓÈë·´À¡ĞÅÏ¢£¬½á¹ûÈ´Ã»·´Ó¦¡£ÎªÊ²Ã´ÄØ?
- * ¶ÁÈ¡ÎÄ±¾ÎÄ¼şÊÇ¿ÉÒÔÒÔnull×÷Îª½áÊøĞÅÏ¢µÄ£¬µ«ÊÇÄØ£¬Í¨µÀÄÚÊÇ²»ÄÜÕâÑù½áÊøĞÅÏ¢µÄ¡£
- * ËùÒÔ£¬·şÎñÆ÷¸ù±¾¾Í²»ÖªµÀÄã½áÊøÁË¡£¶øÄã»¹Ïë·şÎñÆ÷¸øÄã·´À¡¡£ËùÒÔ£¬¾ÍÏà»¥µÈ´ıÁË¡£
+ * æŒ‰ç…§æˆ‘ä»¬æ­£å¸¸çš„æ€è·¯åŠ å…¥åé¦ˆä¿¡æ¯ï¼Œç»“æœå´æ²¡ååº”ã€‚ä¸ºä»€ä¹ˆå‘¢?
+ * è¯»å–æ–‡æœ¬æ–‡ä»¶æ˜¯å¯ä»¥ä»¥nullä½œä¸ºç»“æŸä¿¡æ¯çš„ï¼Œä½†æ˜¯å‘¢ï¼Œé€šé“å†…æ˜¯ä¸èƒ½è¿™æ ·ç»“æŸä¿¡æ¯çš„ã€‚
+ * æ‰€ä»¥ï¼ŒæœåŠ¡å™¨æ ¹æœ¬å°±ä¸çŸ¥é“ä½ ç»“æŸäº†ã€‚è€Œä½ è¿˜æƒ³æœåŠ¡å™¨ç»™ä½ åé¦ˆã€‚æ‰€ä»¥ï¼Œå°±ç›¸äº’ç­‰å¾…äº†ã€‚
  * 
- * ÈçºÎ½â¾öÄØ?
- * A:ÔÚ¶àĞ´Ò»ÌõÊı¾İ£¬¸æËß·şÎñÆ÷£¬¶ÁÈ¡µ½ÕâÌõÊı¾İËµÃ÷ÎÒ¾Í½áÊø£¬ÄãÒ²½áÊø°É¡£
- * 		ÕâÑù×ö¿ÉÒÔ½â¾öÎÊÌâ£¬µ«ÊÇ²»ºÃ¡£
- * B:Socket¶ÔÏóÌá¹©ÁËÒ»ÖÖ½â¾ö·½°¸
+ * å¦‚ä½•è§£å†³å‘¢?
+ * A:åœ¨å¤šå†™ä¸€æ¡æ•°æ®ï¼Œå‘Šè¯‰æœåŠ¡å™¨ï¼Œè¯»å–åˆ°è¿™æ¡æ•°æ®è¯´æ˜æˆ‘å°±ç»“æŸï¼Œä½ ä¹Ÿç»“æŸå§ã€‚
+ * 		è¿™æ ·åšå¯ä»¥è§£å†³é—®é¢˜ï¼Œä½†æ˜¯ä¸å¥½ã€‚
+ * B:Socketå¯¹è±¡æä¾›äº†ä¸€ç§è§£å†³æ–¹æ¡ˆ
  * 		public void shutdownOutput()
  */
 
 public class UploadClient {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¿Í»§¶ËSocket¶ÔÏó
+		// åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 11111);
 
-		// ·â×°ÎÄ±¾ÎÄ¼ş
+		// å°è£…æ–‡æœ¬æ–‡ä»¶
 		BufferedReader br = new BufferedReader(new FileReader(
 				"InetAddressDemo.java"));
-		// ·â×°Í¨µÀÄÚÁ÷
+		// å°è£…é€šé“å†…æµ
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 
 		String line = null;
-		while ((line = br.readLine()) != null) { // ×èÈû
+		while ((line = br.readLine()) != null) { // é˜»å¡
 			bw.write(line);
 			bw.newLine();
 			bw.flush();
 		}
 		
-		//×Ô¶¨ÒåÒ»¸ö½áÊø±ê¼Ç
+		//è‡ªå®šä¹‰ä¸€ä¸ªç»“æŸæ ‡è®°
 //		bw.write("over");
 //		bw.newLine();
 //		bw.flush();
 		
-		//SocketÌá¹©ÁËÒ»¸öÖÕÖ¹£¬Ëü»áÍ¨Öª·şÎñÆ÷Äã±ğµÈÁË£¬ÎÒÃ»ÓĞÊı¾İ¹ıÀ´ÁË
+		//Socketæä¾›äº†ä¸€ä¸ªç»ˆæ­¢ï¼Œå®ƒä¼šé€šçŸ¥æœåŠ¡å™¨ä½ åˆ«ç­‰äº†ï¼Œæˆ‘æ²¡æœ‰æ•°æ®è¿‡æ¥äº†
 		s.shutdownOutput();
 
-		// ½ÓÊÕ·´À¡
+		// æ¥æ”¶åé¦ˆ
 		BufferedReader brClient = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
-		String client = brClient.readLine(); // ×èÈû
+		String client = brClient.readLine(); // é˜»å¡
 		System.out.println(client);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		br.close();
 		s.close();
 	}

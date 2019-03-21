@@ -10,16 +10,16 @@ import java.net.Socket;
 
 public class UploadServer {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨ç«¯çš„Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(11111);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
 		Socket s = ss.accept();
 
-		// ·â×°Í¨µÀÄÚµÄÁ÷
+		// å°è£…é€šé“å†…çš„æµ
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
-		// ·â×°ÎÄ±¾ÎÄ¼ş
+		// å°è£…æ–‡æœ¬æ–‡ä»¶
 		BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
 
 		String line = null;

@@ -18,32 +18,32 @@ public class UserThread implements Runnable {
 	@Override
 	public void run() {
 		try {
-			// ·â×°Í¨µÀÄÚµÄÁ÷
+			// å°è£…é€šé“å†…çš„æµ
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					s.getInputStream()));
-			// ·â×°ÎÄ±¾ÎÄ¼ş
+			// å°è£…æ–‡æœ¬æ–‡ä»¶
 			// BufferedWriter bw = new BufferedWriter(new
 			// FileWriter("Copy.java"));
 
-			// ÎªÁË·ÀÖ¹Ãû³Æ³åÍ»
+			// ä¸ºäº†é˜²æ­¢åç§°å†²çª
 			String newName = System.currentTimeMillis() + ".java";
 			BufferedWriter bw = new BufferedWriter(new FileWriter(newName));
 
 			String line = null;
-			while ((line = br.readLine()) != null) { // ×èÈû
+			while ((line = br.readLine()) != null) { // é˜»å¡
 				bw.write(line);
 				bw.newLine();
 				bw.flush();
 			}
 
-			// ¸ø³ö·´À¡
+			// ç»™å‡ºåé¦ˆ
 			BufferedWriter bwServer = new BufferedWriter(
 					new OutputStreamWriter(s.getOutputStream()));
-			bwServer.write("ÎÄ¼şÉÏ´«³É¹¦");
+			bwServer.write("æ–‡ä»¶ä¸Šä¼ æˆåŠŸ");
 			bwServer.newLine();
 			bwServer.flush();
 
-			// ÊÍ·Å×ÊÔ´
+			// é‡Šæ”¾èµ„æº
 			bw.close();
 			s.close();
 		} catch (IOException e) {

@@ -5,31 +5,31 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
 /*
- * ¶à´ÎÆô¶¯½ÓÊÕ¶Ë£º
+ * å¤šæ¬¡å¯åŠ¨æ¥æ”¶ç«¯ï¼š
  * 		java.net.BindException: Address already in use: Cannot bind
- * 		¶Ë¿Ú±»Õ¼ÓÃ¡£
+ * 		ç«¯å£è¢«å ç”¨ã€‚
  */
 public class ReceiveDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨½ÓÊÕ¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºæ¥æ”¶ç«¯çš„Socketå¯¹è±¡
 		DatagramSocket ds = new DatagramSocket(12345);
 
 		while (true) {
-			// ´´½¨Ò»¸ö°ü¹ü
+			// åˆ›å»ºä¸€ä¸ªåŒ…è£¹
 			byte[] bys = new byte[1024];
 			DatagramPacket dp = new DatagramPacket(bys, bys.length);
 
-			// ½ÓÊÕÊı¾İ
+			// æ¥æ”¶æ•°æ®
 			ds.receive(dp);
 
-			// ½âÎöÊı¾İ
+			// è§£ææ•°æ®
 			String ip = dp.getAddress().getHostAddress();
 			String s = new String(dp.getData(), 0, dp.getLength());
 			System.out.println("from " + ip + " data is : " + s);
 		}
 
-		// ÊÍ·Å×ÊÔ´
-		// ½ÓÊÕ¶ËÓ¦¸ÃÒ»Ö±¿ª×ÅµÈ´ı½ÓÊÕÊı¾İ£¬ÊÇ²»ĞèÒª¹Ø±Õ
+		// é‡Šæ”¾èµ„æº
+		// æ¥æ”¶ç«¯åº”è¯¥ä¸€ç›´å¼€ç€ç­‰å¾…æ¥æ”¶æ•°æ®ï¼Œæ˜¯ä¸éœ€è¦å…³é—­
 		// ds.close();
 	}
 }

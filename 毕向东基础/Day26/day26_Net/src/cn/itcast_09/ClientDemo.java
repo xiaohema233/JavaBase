@@ -8,16 +8,16 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /*
- * ¿Í»§¶Ë¼üÅÌÂ¼Èë£¬·şÎñÆ÷Êä³öÎÄ±¾ÎÄ¼ş
+ * å®¢æˆ·ç«¯é”®ç›˜å½•å…¥ï¼ŒæœåŠ¡å™¨è¾“å‡ºæ–‡æœ¬æ–‡ä»¶
  */
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¿Í»§¶ËSocket¶ÔÏó
+		// åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 23456);
 
-		// ·â×°¼üÅÌÂ¼Èë
+		// å°è£…é”®ç›˜å½•å…¥
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// ·â×°Í¨µÀÄÚµÄÊı¾İ
+		// å°è£…é€šé“å†…çš„æ•°æ®
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 

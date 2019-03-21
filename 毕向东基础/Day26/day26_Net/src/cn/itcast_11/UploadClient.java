@@ -9,13 +9,13 @@ import java.net.Socket;
 
 public class UploadClient {
 	public static void main(String[] args) throws IOException {
-		// 创建客户端Socket对象
+		// 鍒涘缓瀹㈡埛绔疭ocket瀵硅薄
 		Socket s = new Socket("192.168.12.92", 11111);
 
-		// 封装文本文件
+		// 灏佽鏂囨湰鏂囦欢
 		BufferedReader br = new BufferedReader(new FileReader(
 				"InetAddressDemo.java"));
-		// 封装通道内流
+		// 灏佽閫氶亾鍐呮祦
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 
@@ -26,7 +26,7 @@ public class UploadClient {
 			bw.flush();
 		}
 
-		// 释放资源
+		// 閲婃斁璧勬簮
 		br.close();
 		s.close();
 	}

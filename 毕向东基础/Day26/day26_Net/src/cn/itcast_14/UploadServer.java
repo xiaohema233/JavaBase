@@ -9,43 +9,43 @@ import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 /*
- * Í¨¹ıwhileÑ­»·¿ÉÒÔ¸Ä½øÒ»¸ö·şÎñÆ÷½ÓÊÕ¶à¸ö¿Í»§¶Ë¡£
- * µ«ÊÇÕâ¸öÊÇÓĞÎÊÌâµÄ¡£
- * Èç¹ûÊÇÕâÖÖÇé¿ö£¬¼ÙÉèÎÒ»¹ÓĞÕÅÈı£¬ÀîËÄ£¬ÍõÎåÕâÈı¸öÈË·Ö±ğÖ´ĞĞ¿Í»§¶Ë
- * ÕÅÈı£ººÃºÃÑ§Ï°.avi(100M)			256k
- * ÀîËÄ£ºÌìÌìÏòÉÏ.mp3(3M)				1M
- * ÍõÎå£ºILoveJava.txt(1k)			100M
+ * é€šè¿‡whileå¾ªç¯å¯ä»¥æ”¹è¿›ä¸€ä¸ªæœåŠ¡å™¨æ¥æ”¶å¤šä¸ªå®¢æˆ·ç«¯ã€‚
+ * ä½†æ˜¯è¿™ä¸ªæ˜¯æœ‰é—®é¢˜çš„ã€‚
+ * å¦‚æœæ˜¯è¿™ç§æƒ…å†µï¼Œå‡è®¾æˆ‘è¿˜æœ‰å¼ ä¸‰ï¼Œæå››ï¼Œç‹äº”è¿™ä¸‰ä¸ªäººåˆ†åˆ«æ‰§è¡Œå®¢æˆ·ç«¯
+ * å¼ ä¸‰ï¼šå¥½å¥½å­¦ä¹ .avi(100M)			256k
+ * æå››ï¼šå¤©å¤©å‘ä¸Š.mp3(3M)				1M
+ * ç‹äº”ï¼šILoveJava.txt(1k)			100M
  */
 public class UploadServer {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨ç«¯çš„Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(11111);
 
 		while (true) {
-			// ¼àÌı¿Í»§¶ËÁ¬½Ó
-			Socket s = ss.accept();// ×èÈû
+			// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
+			Socket s = ss.accept();// é˜»å¡
 
-			// ·â×°Í¨µÀÄÚµÄÁ÷
+			// å°è£…é€šé“å†…çš„æµ
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					s.getInputStream()));
-			// ·â×°ÎÄ±¾ÎÄ¼ş
+			// å°è£…æ–‡æœ¬æ–‡ä»¶
 			BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
 
 			String line = null;
-			while ((line = br.readLine()) != null) { // ×èÈû
+			while ((line = br.readLine()) != null) { // é˜»å¡
 				bw.write(line);
 				bw.newLine();
 				bw.flush();
 			}
 
-			// ¸ø³ö·´À¡
+			// ç»™å‡ºåé¦ˆ
 			BufferedWriter bwServer = new BufferedWriter(
 					new OutputStreamWriter(s.getOutputStream()));
-			bwServer.write("ÎÄ¼şÉÏ´«³É¹¦");
+			bwServer.write("æ–‡ä»¶ä¸Šä¼ æˆåŠŸ");
 			bwServer.newLine();
 			bwServer.flush();
 
-			// ÊÍ·Å×ÊÔ´
+			// é‡Šæ”¾èµ„æº
 			bw.close();
 			s.close();
 		}

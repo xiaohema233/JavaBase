@@ -5,29 +5,29 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 /*
- * TCPĞ­Òé·¢ËÍÊı¾İ£º
- * A:´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó
- * 		ÕâÒ»²½Èç¹û³É¹¦£¬¾ÍËµÃ÷Á¬½ÓÒÑ¾­½¨Á¢³É¹¦ÁË¡£
- * B:»ñÈ¡Êä³öÁ÷£¬Ğ´Êı¾İ
- * C:ÊÍ·Å×ÊÔ´
+ * TCPåè®®å‘é€æ•°æ®ï¼š
+ * A:åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡
+ * 		è¿™ä¸€æ­¥å¦‚æœæˆåŠŸï¼Œå°±è¯´æ˜è¿æ¥å·²ç»å»ºç«‹æˆåŠŸäº†ã€‚
+ * B:è·å–è¾“å‡ºæµï¼Œå†™æ•°æ®
+ * C:é‡Šæ”¾èµ„æº
  * 
- * Á¬½Ó±»¾Ü¾ø¡£TCPĞ­ÒéÒ»¶¨ÒªÏÈ¿´·şÎñÆ÷¡£
+ * è¿æ¥è¢«æ‹’ç»ã€‚TCPåè®®ä¸€å®šè¦å…ˆçœ‹æœåŠ¡å™¨ã€‚
  * java.net.ConnectException: Connection refused: connect
  */
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡
 		// Socket(InetAddress address, int port)
 		// Socket(String host, int port)
 		// Socket s = new Socket(InetAddress.getByName("192.168.12.92"), 8888);
 		Socket s = new Socket("192.168.12.92", 8888);
 
-		// »ñÈ¡Êä³öÁ÷£¬Ğ´Êı¾İ
+		// è·å–è¾“å‡ºæµï¼Œå†™æ•°æ®
 		// public OutputStream getOutputStream()
 		OutputStream os = s.getOutputStream();
-		os.write("hello,tcp,ÎÒÀ´ÁË".getBytes());
+		os.write("hello,tcp,æˆ‘æ¥äº†".getBytes());
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		s.close();
 	}
 }

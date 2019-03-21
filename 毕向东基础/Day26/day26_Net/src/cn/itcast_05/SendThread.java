@@ -18,7 +18,7 @@ public class SendThread implements Runnable {
 	@Override
 	public void run() {
 		try {
-			// ·â×°¼üÅÌÂ¼ÈëÊı¾İ
+			// å°è£…é”®ç›˜å½•å…¥æ•°æ®
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					System.in));
 			String line = null;
@@ -27,18 +27,18 @@ public class SendThread implements Runnable {
 					break;
 				}
 
-				// ´´½¨Êı¾İ²¢´ò°ü
+				// åˆ›å»ºæ•°æ®å¹¶æ‰“åŒ…
 				byte[] bys = line.getBytes();
 				// DatagramPacket dp = new DatagramPacket(bys, bys.length,
 				// InetAddress.getByName("192.168.12.92"), 12345);
 				DatagramPacket dp = new DatagramPacket(bys, bys.length,
 						InetAddress.getByName("192.168.12.255"), 12306);
 
-				// ·¢ËÍÊı¾İ
+				// å‘é€æ•°æ®
 				ds.send(dp);
 			}
 
-			// ÊÍ·Å×ÊÔ´
+			// é‡Šæ”¾èµ„æº
 			ds.close();
 		} catch (IOException e) {
 			e.printStackTrace();

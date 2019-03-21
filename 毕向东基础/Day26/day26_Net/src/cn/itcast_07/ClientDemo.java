@@ -7,21 +7,21 @@ import java.net.Socket;
 
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¿Í»§¶ËSocket¶ÔÏó
+		// åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 9999);
 
-		// »ñÈ¡Êä³öÁ÷
+		// è·å–è¾“å‡ºæµ
 		OutputStream os = s.getOutputStream();
-		os.write("½ñÌìÌìÆøºÜºÃ,ÊÊºÏË¯¾õ".getBytes());
+		os.write("ä»Šå¤©å¤©æ°”å¾ˆå¥½,é€‚åˆç¡è§‰".getBytes());
 
-		// »ñÈ¡ÊäÈëÁ÷
+		// è·å–è¾“å…¥æµ
 		InputStream is = s.getInputStream();
 		byte[] bys = new byte[1024];
-		int len = is.read(bys);// ×èÈû
+		int len = is.read(bys);// é˜»å¡
 		String client = new String(bys, 0, len);
 		System.out.println("client:" + client);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		s.close();
 	}
 }

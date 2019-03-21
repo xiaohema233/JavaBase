@@ -8,24 +8,24 @@ import java.net.Socket;
 
 public class ServerDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷Socket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(9999);
 
-		// ¼àÌı¿Í»§¶ËµÄÁ¬½Ó
-		Socket s = ss.accept(); // ×èÈû
+		// ç›‘å¬å®¢æˆ·ç«¯çš„è¿æ¥
+		Socket s = ss.accept(); // é˜»å¡
 
-		// »ñÈ¡ÊäÈëÁ÷
+		// è·å–è¾“å…¥æµ
 		InputStream is = s.getInputStream();
 		byte[] bys = new byte[1024];
-		int len = is.read(bys); // ×èÈû
+		int len = is.read(bys); // é˜»å¡
 		String server = new String(bys, 0, len);
 		System.out.println("server:" + server);
 
-		// »ñÈ¡Êä³öÁ÷
+		// è·å–è¾“å‡ºæµ
 		OutputStream os = s.getOutputStream();
-		os.write("Êı¾İÒÑ¾­ÊÕµ½".getBytes());
+		os.write("æ•°æ®å·²ç»æ”¶åˆ°".getBytes());
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		s.close();
 		// ss.close();
 	}

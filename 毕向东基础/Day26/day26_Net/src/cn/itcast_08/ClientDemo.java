@@ -8,22 +8,22 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /*
- * ¿Í»§¶Ë¼üÅÌÂ¼Èë£¬·şÎñÆ÷Êä³öµ½¿ØÖÆÌ¨
+ * å®¢æˆ·ç«¯é”®ç›˜å½•å…¥ï¼ŒæœåŠ¡å™¨è¾“å‡ºåˆ°æ§åˆ¶å°
  */
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¿Í»§¶ËSocket¶ÔÏó
+		// åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 22222);
 
-		// ¼üÅÌÂ¼ÈëÊı¾İ
+		// é”®ç›˜å½•å…¥æ•°æ®
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// °ÑÍ¨µÀÄÚµÄÁ÷¸ø°ü×°Ò»ÏÂ
+		// æŠŠé€šé“å†…çš„æµç»™åŒ…è£…ä¸€ä¸‹
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 
 		String line = null;
 		while ((line = br.readLine()) != null) {
-			// ¼üÅÌÂ¼ÈëÊı¾İÒª×Ô¶¨Òå½áÊø±ê¼Ç
+			// é”®ç›˜å½•å…¥æ•°æ®è¦è‡ªå®šä¹‰ç»“æŸæ ‡è®°
 			if ("886".equals(line)) {
 				break;
 			}
@@ -32,7 +32,7 @@ public class ClientDemo {
 			bw.flush();
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		// bw.close();
 		// br.close();
 		s.close();

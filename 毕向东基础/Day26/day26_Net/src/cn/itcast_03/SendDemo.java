@@ -7,18 +7,18 @@ import java.net.InetAddress;
 
 public class SendDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡
 		DatagramSocket ds = new DatagramSocket();
 
-		// ´´½¨Êı¾İ²¢´ò°ü
+		// åˆ›å»ºæ•°æ®å¹¶æ‰“åŒ…
 		byte[] bys = "helloworld".getBytes();
 		DatagramPacket dp = new DatagramPacket(bys, bys.length,
 				InetAddress.getByName("192.168.12.92"), 12345);
 
-		// ·¢ËÍÊı¾İ
+		// å‘é€æ•°æ®
 		ds.send(dp);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		ds.close();
 	}
 }

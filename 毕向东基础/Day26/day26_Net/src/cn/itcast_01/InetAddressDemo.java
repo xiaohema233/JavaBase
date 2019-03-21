@@ -4,10 +4,10 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /*
- * 如果一个类没有构造方法：
- * A:成员全部是静态的(Math,Arrays,Collections)
- * B:单例设计模式(Runtime)
- * C:类中有静态方法返回该类的对象(InetAddress)
+ * 濡傛灉涓�涓被娌℃湁鏋勯�犳柟娉曪細
+ * A:鎴愬憳鍏ㄩ儴鏄潤鎬佺殑(Math,Arrays,Collections)
+ * B:鍗曚緥璁捐妯″紡(Runtime)
+ * C:绫讳腑鏈夐潤鎬佹柟娉曡繑鍥炶绫荤殑瀵硅薄(InetAddress)
  * 		class Demo {
  * 			private Demo(){}
  * 
@@ -16,17 +16,17 @@ import java.net.UnknownHostException;
  * 			}
  * 		}
  * 
- * 看InetAddress的成员方法：
- * public static InetAddress getByName(String host):根据主机名或者IP地址的字符串表示得到IP地址对象
+ * 鐪婭netAddress鐨勬垚鍛樻柟娉曪細
+ * public static InetAddress getByName(String host):鏍规嵁涓绘満鍚嶆垨鑰匢P鍦板潃鐨勫瓧绗︿覆琛ㄧず寰楀埌IP鍦板潃瀵硅薄
  */
 public class InetAddressDemo {
 	public static void main(String[] args) throws UnknownHostException {
 		// public static InetAddress getByName(String host)
-		// InetAddress address = InetAddress.getByName("liuyi");
-		// InetAddress address = InetAddress.getByName("192.168.12.92");
-		InetAddress address = InetAddress.getByName("192.168.12.63");
+		// InetAddress address = InetAddress.getByName("maple");
+		// InetAddress address = InetAddress.getByName("172.16.0.107");
+		InetAddress address = InetAddress.getByName("maple");
 
-		// 获取两个东西：主机名，IP地址
+		// 鑾峰彇涓や釜涓滆タ锛氫富鏈哄悕锛孖P鍦板潃
 		// public String getHostName()
 		String name = address.getHostName();
 		// public String getHostAddress()

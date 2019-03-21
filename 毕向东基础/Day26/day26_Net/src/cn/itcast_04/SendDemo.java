@@ -8,15 +8,15 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 /*
- * Êı¾İÀ´×ÔÓÚ¼üÅÌÂ¼Èë
- * ¼üÅÌÂ¼ÈëÊı¾İÒª×Ô¼º¿ØÖÆÂ¼Èë½áÊø¡£
+ * æ•°æ®æ¥è‡ªäºé”®ç›˜å½•å…¥
+ * é”®ç›˜å½•å…¥æ•°æ®è¦è‡ªå·±æ§åˆ¶å½•å…¥ç»“æŸã€‚
  */
 public class SendDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·¢ËÍ¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºå‘é€ç«¯çš„Socketå¯¹è±¡
 		DatagramSocket ds = new DatagramSocket();
 
-		// ·â×°¼üÅÌÂ¼ÈëÊı¾İ
+		// å°è£…é”®ç›˜å½•å…¥æ•°æ®
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String line = null;
 		while ((line = br.readLine()) != null) {
@@ -24,18 +24,18 @@ public class SendDemo {
 				break;
 			}
 
-			// ´´½¨Êı¾İ²¢´ò°ü
+			// åˆ›å»ºæ•°æ®å¹¶æ‰“åŒ…
 			byte[] bys = line.getBytes();
 			// DatagramPacket dp = new DatagramPacket(bys, bys.length,
 			// InetAddress.getByName("192.168.12.92"), 12345);
 			DatagramPacket dp = new DatagramPacket(bys, bys.length,
 					InetAddress.getByName("192.168.12.255"), 12345);
 
-			// ·¢ËÍÊı¾İ
+			// å‘é€æ•°æ®
 			ds.send(dp);
 		}
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		ds.close();
 	}
 }

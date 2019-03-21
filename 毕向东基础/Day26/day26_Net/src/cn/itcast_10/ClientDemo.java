@@ -8,17 +8,17 @@ import java.io.OutputStreamWriter;
 import java.net.Socket;
 
 /*
- * ¿Í»§¶ËÎÄ±¾ÎÄ¼ş£¬·şÎñÆ÷Êä³öµ½¿ØÖÆÌ¨
+ * å®¢æˆ·ç«¯æ–‡æœ¬æ–‡ä»¶ï¼ŒæœåŠ¡å™¨è¾“å‡ºåˆ°æ§åˆ¶å°
  */
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨Socket¶ÔÏó
+		// åˆ›å»ºSocketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 34567);
 
-		// ·â×°ÎÄ±¾ÎÄ¼ş
+		// å°è£…æ–‡æœ¬æ–‡ä»¶
 		BufferedReader br = new BufferedReader(new FileReader(
 				"InetAddressDemo.java"));
-		// ·â×°Í¨µÀÄÚµÄÁ÷
+		// å°è£…é€šé“å†…çš„æµ
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 

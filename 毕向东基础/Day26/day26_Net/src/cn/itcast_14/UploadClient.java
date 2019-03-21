@@ -10,33 +10,33 @@ import java.net.Socket;
 
 public class UploadClient {
 	public static void main(String[] args) throws IOException {
-		// 创建客户端Socket对象
+		// 鍒涘缓瀹㈡埛绔疭ocket瀵硅薄
 		Socket s = new Socket("192.168.12.92", 11111);
 
-		// 封装文本文件
+		// 灏佽鏂囨湰鏂囦欢
 		BufferedReader br = new BufferedReader(new FileReader(
 				"InetAddressDemo.java"));
-		// 封装通道内流
+		// 灏佽閫氶亾鍐呮祦
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
 				s.getOutputStream()));
 
 		String line = null;
-		while ((line = br.readLine()) != null) { // 阻塞
+		while ((line = br.readLine()) != null) { // 闃诲
 			bw.write(line);
 			bw.newLine();
 			bw.flush();
 		}
 
-		// Socket提供了一个终止，它会通知服务器你别等了，我没有数据过来了
+		// Socket鎻愪緵浜嗕竴涓粓姝紝瀹冧細閫氱煡鏈嶅姟鍣ㄤ綘鍒瓑浜嗭紝鎴戞病鏈夋暟鎹繃鏉ヤ簡
 		s.shutdownOutput();
 
-		// 接收反馈
+		// 鎺ユ敹鍙嶉
 		BufferedReader brClient = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
-		String client = brClient.readLine(); // 阻塞
+		String client = brClient.readLine(); // 闃诲
 		System.out.println(client);
 
-		// 释放资源
+		// 閲婃斁璧勬簮
 		br.close();
 		s.close();
 	}

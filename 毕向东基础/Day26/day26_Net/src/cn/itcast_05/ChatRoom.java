@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.DatagramSocket;
 
 /*
- * Í¨¹ı¶àÏß³Ì¸Ä½ø¸Õ²ÅµÄÁÄÌì³ÌĞò£¬ÕâÑùÎÒ¾Í¿ÉÒÔÊµÏÖÔÚÒ»¸ö´°¿Ú·¢ËÍºÍ½ÓÊÕÊı¾İÁË
+ * é€šè¿‡å¤šçº¿ç¨‹æ”¹è¿›åˆšæ‰çš„èŠå¤©ç¨‹åºï¼Œè¿™æ ·æˆ‘å°±å¯ä»¥å®ç°åœ¨ä¸€ä¸ªçª—å£å‘é€å’Œæ¥æ”¶æ•°æ®äº†
  */
 public class ChatRoom {
 	public static void main(String[] args) throws IOException {

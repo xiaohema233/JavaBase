@@ -6,35 +6,35 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /*
- * TCPĞ­Òé½ÓÊÕÊı¾İ£º
- * A:´´½¨½ÓÊÕ¶ËµÄSocket¶ÔÏó
- * B:¼àÌı¿Í»§¶ËÁ¬½Ó¡£·µ»ØÒ»¸ö¶ÔÓ¦µÄSocket¶ÔÏó
- * C:»ñÈ¡ÊäÈëÁ÷£¬¶ÁÈ¡Êı¾İÏÔÊ¾ÔÚ¿ØÖÆÌ¨
- * D:ÊÍ·Å×ÊÔ´
+ * TCPåè®®æ¥æ”¶æ•°æ®ï¼š
+ * A:åˆ›å»ºæ¥æ”¶ç«¯çš„Socketå¯¹è±¡
+ * B:ç›‘å¬å®¢æˆ·ç«¯è¿æ¥ã€‚è¿”å›ä¸€ä¸ªå¯¹åº”çš„Socketå¯¹è±¡
+ * C:è·å–è¾“å…¥æµï¼Œè¯»å–æ•°æ®æ˜¾ç¤ºåœ¨æ§åˆ¶å°
+ * D:é‡Šæ”¾èµ„æº
  */
 public class ServerDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨½ÓÊÕ¶ËµÄSocket¶ÔÏó
+		// åˆ›å»ºæ¥æ”¶ç«¯çš„Socketå¯¹è±¡
 		// ServerSocket(int port)
 		ServerSocket ss = new ServerSocket(8888);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó¡£·µ»ØÒ»¸ö¶ÔÓ¦µÄSocket¶ÔÏó
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥ã€‚è¿”å›ä¸€ä¸ªå¯¹åº”çš„Socketå¯¹è±¡
 		// public Socket accept()
-		Socket s = ss.accept(); // ÕìÌı²¢½ÓÊÜµ½´ËÌ×½Ó×ÖµÄÁ¬½Ó¡£´Ë·½·¨ÔÚÁ¬½Ó´«ÈëÖ®Ç°Ò»Ö±×èÈû¡£
+		Socket s = ss.accept(); // ä¾¦å¬å¹¶æ¥å—åˆ°æ­¤å¥—æ¥å­—çš„è¿æ¥ã€‚æ­¤æ–¹æ³•åœ¨è¿æ¥ä¼ å…¥ä¹‹å‰ä¸€ç›´é˜»å¡ã€‚
 
-		// »ñÈ¡ÊäÈëÁ÷£¬¶ÁÈ¡Êı¾İÏÔÊ¾ÔÚ¿ØÖÆÌ¨
+		// è·å–è¾“å…¥æµï¼Œè¯»å–æ•°æ®æ˜¾ç¤ºåœ¨æ§åˆ¶å°
 		InputStream is = s.getInputStream();
 
 		byte[] bys = new byte[1024];
-		int len = is.read(bys); // ×èÈûÊ½·½·¨
+		int len = is.read(bys); // é˜»å¡å¼æ–¹æ³•
 		String str = new String(bys, 0, len);
 
 		String ip = s.getInetAddress().getHostAddress();
 
 		System.out.println(ip + "---" + str);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		s.close();
-		// ss.close(); //Õâ¸ö²»Ó¦¸Ã¹Ø±Õ
+		// ss.close(); //è¿™ä¸ªä¸åº”è¯¥å…³é—­
 	}
 }

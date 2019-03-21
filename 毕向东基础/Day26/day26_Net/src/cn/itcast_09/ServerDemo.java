@@ -10,16 +10,16 @@ import java.net.Socket;
 
 public class ServerDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷Socket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(23456);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
 		Socket s = ss.accept();
 
-		// ·â×°Í¨µÀÄÚµÄÊı¾İ
+		// å°è£…é€šé“å†…çš„æ•°æ®
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
-		// ·â×°ÎÄ±¾ÎÄ¼ş
+		// å°è£…æ–‡æœ¬æ–‡ä»¶
 		BufferedWriter bw = new BufferedWriter(new FileWriter("a.txt"));
 
 		String line = null;

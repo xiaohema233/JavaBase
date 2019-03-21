@@ -10,15 +10,15 @@ import java.net.Socket;
 
 public class UploadServer {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷Socket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(19191);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
 		Socket s = ss.accept();
 
-		// ·â×°Í¨µÀÄÚÁ÷
+		// å°è£…é€šé“å†…æµ
 		BufferedInputStream bis = new BufferedInputStream(s.getInputStream());
-		// ·â×°Í¼Æ¬ÎÄ¼ş
+		// å°è£…å›¾ç‰‡æ–‡ä»¶
 		BufferedOutputStream bos = new BufferedOutputStream(
 				new FileOutputStream("mn.jpg"));
 
@@ -29,9 +29,9 @@ public class UploadServer {
 			bos.flush();
 		}
 
-		// ¸øÒ»¸ö·´À¡
+		// ç»™ä¸€ä¸ªåé¦ˆ
 		OutputStream os = s.getOutputStream();
-		os.write("Í¼Æ¬ÉÏ´«³É¹¦".getBytes());
+		os.write("å›¾ç‰‡ä¸Šä¼ æˆåŠŸ".getBytes());
 
 		bos.close();
 		s.close();

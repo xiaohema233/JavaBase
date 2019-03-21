@@ -9,13 +9,13 @@ import java.net.Socket;
 
 public class UploadClient {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨¿Í»§¶ËSocket¶ÔÏó
+		// åˆ›å»ºå®¢æˆ·ç«¯Socketå¯¹è±¡
 		Socket s = new Socket("192.168.12.92", 19191);
 
-		// ·â×°Í¼Æ¬ÎÄ¼ş
+		// å°è£…å›¾ç‰‡æ–‡ä»¶
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"ÁÖÇàÏ¼.jpg"));
-		// ·â×°Í¨µÀÄÚµÄÁ÷
+				"æ—é’éœ.jpg"));
+		// å°è£…é€šé“å†…çš„æµ
 		BufferedOutputStream bos = new BufferedOutputStream(s.getOutputStream());
 
 		byte[] bys = new byte[1024];
@@ -27,14 +27,14 @@ public class UploadClient {
 		
 		s.shutdownOutput();
 
-		// ¶ÁÈ¡·´À¡
+		// è¯»å–åé¦ˆ
 		InputStream is = s.getInputStream();
 		byte[] bys2 = new byte[1024];
 		int len2 = is.read(bys2);
 		String client = new String(bys2, 0, len2);
 		System.out.println(client);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		bis.close();
 		s.close();
 	}

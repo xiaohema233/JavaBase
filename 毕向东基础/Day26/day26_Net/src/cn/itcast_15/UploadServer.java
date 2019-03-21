@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class UploadServer {
 	public static void main(String[] args) throws IOException {
-		// 创建服务器Socket对象
+		// 鍒涘缓鏈嶅姟鍣⊿ocket瀵硅薄
 		ServerSocket ss = new ServerSocket(11111);
 
 		while (true) {

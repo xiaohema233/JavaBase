@@ -6,42 +6,42 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 /*
- * UDPĞ­Òé½ÓÊÕÊı¾İ£º
- * A:´´½¨½ÓÊÕ¶ËSocket¶ÔÏó
- * B:´´½¨Ò»¸öÊı¾İ°ü(½ÓÊÕÈİÆ÷)
- * C:µ÷ÓÃSocket¶ÔÏóµÄ½ÓÊÕ·½·¨½ÓÊÕÊı¾İ
- * D:½âÎöÊı¾İ°ü£¬²¢ÏÔÊ¾ÔÚ¿ØÖÆÌ¨
- * E:ÊÍ·Å×ÊÔ´
+ * UDPåè®®æ¥æ”¶æ•°æ®ï¼š
+ * A:åˆ›å»ºæ¥æ”¶ç«¯Socketå¯¹è±¡
+ * B:åˆ›å»ºä¸€ä¸ªæ•°æ®åŒ…(æ¥æ”¶å®¹å™¨)
+ * C:è°ƒç”¨Socketå¯¹è±¡çš„æ¥æ”¶æ–¹æ³•æ¥æ”¶æ•°æ®
+ * D:è§£ææ•°æ®åŒ…ï¼Œå¹¶æ˜¾ç¤ºåœ¨æ§åˆ¶å°
+ * E:é‡Šæ”¾èµ„æº
  */
 public class ReceiveDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨½ÓÊÕ¶ËSocket¶ÔÏó
+		// åˆ›å»ºæ¥æ”¶ç«¯Socketå¯¹è±¡
 		// DatagramSocket(int port)
 		DatagramSocket ds = new DatagramSocket(10086);
 
-		// ´´½¨Ò»¸öÊı¾İ°ü(½ÓÊÕÈİÆ÷)
+		// åˆ›å»ºä¸€ä¸ªæ•°æ®åŒ…(æ¥æ”¶å®¹å™¨)
 		// DatagramPacket(byte[] buf, int length)
 		byte[] bys = new byte[1024];
 		int length = bys.length;
 		DatagramPacket dp = new DatagramPacket(bys, length);
 
-		// µ÷ÓÃSocket¶ÔÏóµÄ½ÓÊÕ·½·¨½ÓÊÕÊı¾İ
+		// è°ƒç”¨Socketå¯¹è±¡çš„æ¥æ”¶æ–¹æ³•æ¥æ”¶æ•°æ®
 		// public void receive(DatagramPacket p)
-		ds.receive(dp); // ×èÈûÊ½
+		ds.receive(dp); // é˜»å¡å¼
 
-		// ½âÎöÊı¾İ°ü£¬²¢ÏÔÊ¾ÔÚ¿ØÖÆÌ¨
-		// »ñÈ¡¶Ô·½µÄip
+		// è§£ææ•°æ®åŒ…ï¼Œå¹¶æ˜¾ç¤ºåœ¨æ§åˆ¶å°
+		// è·å–å¯¹æ–¹çš„ip
 		// public InetAddress getAddress()
 		InetAddress address = dp.getAddress();
 		String ip = address.getHostAddress();
-		// public byte[] getData():»ñÈ¡Êı¾İ»º³åÇø
-		// public int getLength():»ñÈ¡Êı¾İµÄÊµ¼Ê³¤¶È
+		// public byte[] getData():è·å–æ•°æ®ç¼“å†²åŒº
+		// public int getLength():è·å–æ•°æ®çš„å®é™…é•¿åº¦
 		byte[] bys2 = dp.getData();
 		int len = dp.getLength();
 		String s = new String(bys2, 0, len);
-		System.out.println(ip + "´«µİµÄÊı¾İÊÇ:" + s);
+		System.out.println(ip + "ä¼ é€’çš„æ•°æ®æ˜¯:" + s);
 
-		// ÊÍ·Å×ÊÔ´
+		// é‡Šæ”¾èµ„æº
 		ds.close();
 	}
 }

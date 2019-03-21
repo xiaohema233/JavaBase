@@ -8,13 +8,13 @@ import java.net.Socket;
 
 public class ServerDemo {
 	public static void main(String[] args) throws IOException {
-		// ´´½¨·şÎñÆ÷Socket¶ÔÏó
+		// åˆ›å»ºæœåŠ¡å™¨Socketå¯¹è±¡
 		ServerSocket ss = new ServerSocket(22222);
 
-		// ¼àÌı¿Í»§¶ËÁ¬½Ó
+		// ç›‘å¬å®¢æˆ·ç«¯è¿æ¥
 		Socket s = ss.accept();
 
-		// °ü×°Í¨µÀÄÚÈİµÄÁ÷
+		// åŒ…è£…é€šé“å†…å®¹çš„æµ
 		BufferedReader br = new BufferedReader(new InputStreamReader(
 				s.getInputStream()));
 		String line = null;
