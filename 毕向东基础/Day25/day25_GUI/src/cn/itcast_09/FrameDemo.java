@@ -12,30 +12,30 @@ import java.awt.event.WindowEvent;
 import java.io.IOException;
 
 /*
- * ¶à¼¶²Ëµ¥
+ * å¤šçº§èœå•
  */
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó²¢ÉèÖÃÊôĞÔ
-		final Frame f = new Frame("¶à¼¶²Ëµ¥");
+		// åˆ›å»ºçª—ä½“å¯¹è±¡å¹¶è®¾ç½®å±æ€§
+		final Frame f = new Frame("å¤šçº§èœå•");
 		f.setBounds(400, 200, 400, 300);
 		f.setLayout(new FlowLayout());
 		
 		final String name = f.getTitle();
 
-		// ´´½¨²Ëµ¥À¸
+		// åˆ›å»ºèœå•æ 
 		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m1 = new Menu("ÎÄ¼ş");
-		Menu m2 = new Menu("¸ü¸ÄÃû³Æ");
-		// ´´½¨²Ëµ¥Ïî
-		final MenuItem mi1 = new MenuItem("ºÃºÃÑ§Ï°");
-		final MenuItem mi2 = new MenuItem("ÌìÌìÏòÉÏ");
-		MenuItem mi3 = new MenuItem("»Ö¸´±êÌâ");
-		MenuItem mi4 = new MenuItem("´ò¿ª¼ÇÊÂ±¾");
-		MenuItem mi5 = new MenuItem("ÍË³öÏµÍ³");
+		// åˆ›å»ºèœå•
+		Menu m1 = new Menu("æ–‡ä»¶");
+		Menu m2 = new Menu("æ›´æ”¹åç§°");
+		// åˆ›å»ºèœå•é¡¹
+		final MenuItem mi1 = new MenuItem("å¥½å¥½å­¦ä¹ ");
+		final MenuItem mi2 = new MenuItem("å¤©å¤©å‘ä¸Š");
+		MenuItem mi3 = new MenuItem("æ¢å¤æ ‡é¢˜");
+		MenuItem mi4 = new MenuItem("æ‰“å¼€è®°äº‹æœ¬");
+		MenuItem mi5 = new MenuItem("é€€å‡ºç³»ç»Ÿ");
 
-		// Ë­Ìí¼ÓË­ÄØ
+		// è°æ·»åŠ è°å‘¢
 		m2.add(mi1);
 		m2.add(mi2);
 		m2.add(mi3);
@@ -46,10 +46,10 @@ public class FrameDemo {
 		
 		mb.add(m1);
 
-		// ÉèÖÃ²Ëµ¥À¸
+		// è®¾ç½®èœå•æ 
 		f.setMenuBar(mb);
 
-		// ÉèÖÃ´°Ìå¹Ø±Õ
+		// è®¾ç½®çª—ä½“å…³é—­
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -97,7 +97,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

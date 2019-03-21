@@ -7,17 +7,17 @@ import java.awt.event.WindowListener;
 
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame("´°Ìå¹Ø±Õ°¸Àı");
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		Frame f = new Frame("çª—ä½“å…³é—­æ¡ˆä¾‹");
 
-		// ÉèÖÃ´°ÌåÊôĞÔ
+		// è®¾ç½®çª—ä½“å±æ€§
 		f.setBounds(400, 200, 400, 300);
 
-		// ÈÃ´°Ìå¹Ø±Õ
-		//ÊÂ¼şÔ´
-		//ÊÂ¼ş£º¶Ô´°ÌåµÄ´¦Àí
-		//ÊÂ¼ş´¦Àí£º¹Ø±Õ´°¿Ú(System.exit(0));
-		//ÊÂ¼ş¼àÌı
+		// è®©çª—ä½“å…³é—­
+		//äº‹ä»¶æº
+		//äº‹ä»¶ï¼šå¯¹çª—ä½“çš„å¤„ç†
+		//äº‹ä»¶å¤„ç†ï¼šå…³é—­çª—å£(System.exit(0));
+		//äº‹ä»¶ç›‘å¬
 //		f.addWindowListener(new WindowListener() {
 //			@Override
 //			public void windowOpened(WindowEvent e) {
@@ -49,7 +49,7 @@ public class FrameDemo {
 //			}
 //		});
 		
-		//ÓÃÊÊÅäÆ÷Àà¸Ä½ø
+		//ç”¨é€‚é…å™¨ç±»æ”¹è¿›
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -57,7 +57,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

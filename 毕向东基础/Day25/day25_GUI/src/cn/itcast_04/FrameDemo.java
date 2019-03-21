@@ -9,29 +9,29 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * ĞèÇó£º°Ñ°´Å¥Ìí¼Óµ½´°Ìå£¬²¢¶Ô°´Å¥Ìí¼ÓÒ»¸öµã»÷ÊÂ¼ş¡£
- * A£º´´½¨´°Ìå¶ÔÏó
- * B:´´½¨°´Å¥¶ÔÏó
- * C:°Ñ°´Å¥Ìí¼Óµ½´°Ìå
- * D:´°ÌåÏÔÊ¾
+ * éœ€æ±‚ï¼šæŠŠæŒ‰é’®æ·»åŠ åˆ°çª—ä½“ï¼Œå¹¶å¯¹æŒ‰é’®æ·»åŠ ä¸€ä¸ªç‚¹å‡»äº‹ä»¶ã€‚
+ * Aï¼šåˆ›å»ºçª—ä½“å¯¹è±¡
+ * B:åˆ›å»ºæŒ‰é’®å¯¹è±¡
+ * C:æŠŠæŒ‰é’®æ·»åŠ åˆ°çª—ä½“
+ * D:çª—ä½“æ˜¾ç¤º
  */
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame("Ìí¼Ó°´Å¥");
-		// ÉèÖÃÊôĞÔ
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		Frame f = new Frame("æ·»åŠ æŒ‰é’®");
+		// è®¾ç½®å±æ€§
 		f.setBounds(400, 200, 400, 300);
-		// ÉèÖÃ²¼¾ÖÎªÁ÷Ê½²¼¾Ö
+		// è®¾ç½®å¸ƒå±€ä¸ºæµå¼å¸ƒå±€
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨°´Å¥¶ÔÏó
-		Button bu = new Button("µãÎÒ°¡");
+		// åˆ›å»ºæŒ‰é’®å¯¹è±¡
+		Button bu = new Button("ç‚¹æˆ‘å•Š");
 		// bu.setSize(20, 10);
 
-		// °Ñ°´Å¥Ìí¼Óµ½´°Ìå
+		// æŠŠæŒ‰é’®æ·»åŠ åˆ°çª—ä½“
 		f.add(bu);
 
-		// ÉèÖÃ´°Ìå¿ÉÒÔ¹Ø±Õ
+		// è®¾ç½®çª—ä½“å¯ä»¥å…³é—­
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -42,11 +42,11 @@ public class FrameDemo {
 		bu.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("ÄãÔÙµãÊÔÊÔ");
+				System.out.println("ä½ å†ç‚¹è¯•è¯•");
 			}
 		});
 
-		// ´°ÌåÏÔÊ¾
+		// çª—ä½“æ˜¾ç¤º
 		f.setVisible(true);
 	}
 }

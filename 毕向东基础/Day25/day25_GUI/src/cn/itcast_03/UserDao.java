@@ -1,7 +1,7 @@
 package cn.itcast_03;
 
 /*
- * Õë¶ÔÓÃ»§²Ù×÷µÄËÄÖÖ¹¦ÄÜ
+ * é’ˆå¯¹ç”¨æˆ·æ“ä½œçš„å››ç§åŠŸèƒ½
  */
 public interface UserDao {
 	public abstract void add();

@@ -6,8 +6,8 @@ import java.awt.Point;
 
 public class FrameDemo2 {
 	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		Frame f = new Frame("·½·¨µ÷ÓÃµÄÇ°ºó¹ØÏµ");
+		// åˆ›å»ºå¯¹è±¡
+		Frame f = new Frame("æ–¹æ³•è°ƒç”¨çš„å‰åå…³ç³»");
 
 		// f.setVisible(true);
 		// try {
@@ -24,7 +24,7 @@ public class FrameDemo2 {
 		// // Point(int x, int y)
 		// Point p = new Point(400, 200);
 		// f.setLocation(p);
-		// Ò»¸ö·½·¨¸ã¶¨
+		// ä¸€ä¸ªæ–¹æ³•æå®š
 		f.setBounds(400, 200, 400, 300);
 
 		f.setVisible(true);

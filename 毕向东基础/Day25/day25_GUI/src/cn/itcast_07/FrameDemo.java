@@ -10,24 +10,24 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * ÄãÊäÈëµÄÈç¹ûÊÇ·ÇÊı×Ö×Ö·û£¬¾ÍÈ¡ÏûÄã¼üÅÌÂ¼ÈëµÄĞ§¹û¡£
+ * ä½ è¾“å…¥çš„å¦‚æœæ˜¯éæ•°å­—å­—ç¬¦ï¼Œå°±å–æ¶ˆä½ é”®ç›˜å½•å…¥çš„æ•ˆæœã€‚
  */
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó²¢ÉèÖÃÊôĞÔ
-		Frame f = new Frame("²»ÄÜÊäÈë·ÇÊı×Ö×Ö·û");
+		// åˆ›å»ºçª—ä½“å¯¹è±¡å¹¶è®¾ç½®å±æ€§
+		Frame f = new Frame("ä¸èƒ½è¾“å…¥éæ•°å­—å­—ç¬¦");
 		f.setBounds(400, 200, 400, 300);
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨Label±êÇ©¶ÔÏó
-		Label label = new Label("ÇëÊäÈëÄãµÄQQºÅÂë£¬²»ÄÜÊÇ·ÇÊı×Ö£¬²»ĞÅÄãÊÔÊÔ");
+		// åˆ›å»ºLabelæ ‡ç­¾å¯¹è±¡
+		Label label = new Label("è¯·è¾“å…¥ä½ çš„QQå·ç ï¼Œä¸èƒ½æ˜¯éæ•°å­—ï¼Œä¸ä¿¡ä½ è¯•è¯•");
 		TextField tf = new TextField(40);
 
-		// Ìí¼Óµ½´°ÌåÉÏ
+		// æ·»åŠ åˆ°çª—ä½“ä¸Š
 		f.add(label);
 		f.add(tf);
 
-		// ÉèÖÃ´°Ìå¹Ø±Õ
+		// è®¾ç½®çª—ä½“å…³é—­
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -35,12 +35,12 @@ public class FrameDemo {
 			}
 		});
 
-		// ¸øÎÄ±¾¿òÌí¼ÓÊÂ¼ş
+		// ç»™æ–‡æœ¬æ¡†æ·»åŠ äº‹ä»¶
 		tf.addKeyListener(new KeyAdapter() {
 			@Override
 			public void keyPressed(KeyEvent e) {
-				// Èç¹ûÄãÈ¡µÃµÄ×Ö·û²»ÊÇÊı×Ö×Ö·û¾ÍÈ¡ÏûÊÂ¼ş
-				// Ë¼Â·£ºÏÈ»ñÈ¡×Ö·û£¬ÅĞ¶Ï×Ö·û£¬È¡ÏûÊÂ¼ş
+				// å¦‚æœä½ å–å¾—çš„å­—ç¬¦ä¸æ˜¯æ•°å­—å­—ç¬¦å°±å–æ¶ˆäº‹ä»¶
+				// æ€è·¯ï¼šå…ˆè·å–å­—ç¬¦ï¼Œåˆ¤æ–­å­—ç¬¦ï¼Œå–æ¶ˆäº‹ä»¶
 				// char getKeyChar()  
 				char ch = e.getKeyChar();
 //				System.out.println(ch);
@@ -50,7 +50,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

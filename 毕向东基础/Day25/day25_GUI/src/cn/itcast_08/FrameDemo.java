@@ -11,30 +11,30 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Ò»¼¶²Ëµ¥
+ * ä¸€çº§èœå•
  */
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó²¢ÉèÖÃÊôĞÔ
-		Frame f = new Frame("Ò»¼¶²Ëµ¥");
+		// åˆ›å»ºçª—ä½“å¯¹è±¡å¹¶è®¾ç½®å±æ€§
+		Frame f = new Frame("ä¸€çº§èœå•");
 		f.setBounds(400, 200, 400, 300);
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨²Ëµ¥À¸
+		// åˆ›å»ºèœå•æ 
 		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m = new Menu("ÎÄ¼ş");
-		// ´´½¨²Ëµ¥Ïî
-		MenuItem mi = new MenuItem("ÍË³öÏµÍ³");
+		// åˆ›å»ºèœå•
+		Menu m = new Menu("æ–‡ä»¶");
+		// åˆ›å»ºèœå•é¡¹
+		MenuItem mi = new MenuItem("é€€å‡ºç³»ç»Ÿ");
 
-		// Ë­Ìí¼ÓË­ÄØ
+		// è°æ·»åŠ è°å‘¢
 		m.add(mi);
 		mb.add(m);
 
-		// ÉèÖÃ²Ëµ¥À¸
+		// è®¾ç½®èœå•æ 
 		f.setMenuBar(mb);
 
-		// ÉèÖÃ´°Ìå¹Ø±Õ
+		// è®¾ç½®çª—ä½“å…³é—­
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -49,7 +49,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°Ìå¿É¼û
+		// è®¾ç½®çª—ä½“å¯è§
 		f.setVisible(true);
 	}
 }

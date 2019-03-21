@@ -1,25 +1,25 @@
-�¼��������ƣ�
-	A:�¼�Դ	�¼������ĵط�
-	B:�¼�	����Ҫ����������
-	C:�¼�����	������Է��������������Ĵ�������
-	D:�¼����� ���ǰ��¼�Դ���¼���������
+事件监听机制：
+	A:事件源	事件发生的地方
+	B:事件	就是要发生的事情
+	C:事件处理	就是针对发生的事情做出的处理方案
+	D:事件监听 就是把事件源和事件关联起来
 
-�������������¼���
+举例：人受伤事件。
 	
-	�¼�Դ���ˣ�����Ķ���
-		Person p1 = new Person("����");
-		Person p2 = new Person("����");
-	�¼�������
-		interface ���˽ӿ� {
-			һȭ();
-			һ��();
-			һ��ש();
+	事件源：人（具体的对象）
+		Person p1 = new Person("张三");
+		Person p2 = new Person("李四");
+	事件：受伤
+		interface 受伤接口 {
+			一拳();
+			一脚();
+			一板砖();
 		}
-	�¼�������
-		���˴����� implements ���˽ӿ� {
-			һȭ(){ System.out.println("������Ѫ�ˣ��͵�������ϴϴ"); }
-			һ��(){ System.out.println("�ε��ˣ��͵�ͨ�紦"); }
-			һ��ש(){ System.out.println("ͷ��Ѫ�����͵�̫ƽ��"); }
+	事件处理：
+		受伤处理类 implements 受伤接口 {
+			一拳(){ System.out.println("鼻子流血了，送到卫生间洗洗"); }
+			一脚(){ System.out.println("晕倒了，送到通风处"); }
+			一板砖(){ System.out.println("头破血流，送到太平间"); }
 		}
-	�¼�������
-		p1.ע�����(���˽ӿ�)
+	事件监听：
+		p1.注册监听(受伤接口)

@@ -4,19 +4,19 @@ import java.awt.Frame;
 
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
 		// Frame f = new Frame();
 		// Frame(String title)
-		Frame f = new Frame("ÁÖÇàÏ¼");
+		Frame f = new Frame("æ—é’éœ");
 
-		// ÉèÖÃ´°Ìå±êÌâ
+		// è®¾ç½®çª—ä½“æ ‡é¢˜
 		f.setTitle("HelloWorld");
-		// ÉèÖÃ´°Ìå´óĞ¡
-		f.setSize(400, 300); // µ¥Î»£ºÏñËØ
-		// ÉèÖÃ´°ÌåÎ»ÖÃ
+		// è®¾ç½®çª—ä½“å¤§å°
+		f.setSize(400, 300); // å•ä½ï¼šåƒç´ 
+		// è®¾ç½®çª—ä½“ä½ç½®
 		f.setLocation(400, 200);
 
-		// µ÷ÓÃÒ»¸ö·½·¨£¬ÉèÖÃÈÃ´°Ìå¿É¼û
+		// è°ƒç”¨ä¸€ä¸ªæ–¹æ³•ï¼Œè®¾ç½®è®©çª—ä½“å¯è§
 		// f.show();
 		f.setVisible(true);
 

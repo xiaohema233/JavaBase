@@ -11,23 +11,23 @@ import java.awt.event.WindowEvent;
 
 public class FrameDemo {
 	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¸ü¸Ä±³¾°É«");
-		// ÉèÖÃ´°ÌåÊôĞÔºÍ²¼¾Ö
+		// åˆ›å»ºçª—ä½“å¯¹è±¡
+		final Frame f = new Frame("æ›´æ”¹èƒŒæ™¯è‰²");
+		// è®¾ç½®çª—ä½“å±æ€§å’Œå¸ƒå±€
 		f.setBounds(400, 200, 400, 300);
 		f.setLayout(new FlowLayout());
 
-		// ´´½¨ËÄ¸ö°´Å¥
-		Button redButton = new Button("ºìÉ«");
-		Button greenButton = new Button("ÂÌÉ«");
-		Button buleButton = new Button("À¶É«");
+		// åˆ›å»ºå››ä¸ªæŒ‰é’®
+		Button redButton = new Button("çº¢è‰²");
+		Button greenButton = new Button("ç»¿è‰²");
+		Button buleButton = new Button("è“è‰²");
 
-		// Ìí¼Ó°´Å¥
+		// æ·»åŠ æŒ‰é’®
 		f.add(redButton);
 		f.add(greenButton);
 		f.add(buleButton);
 
-		// ÉèÖÃ´°Ìå¹Ø±Õ
+		// è®¾ç½®çª—ä½“å…³é—­
 		f.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
@@ -35,7 +35,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ¶Ô°´Å¥Ìí¼Ó¶¯×÷ÊÂ¼ş
+		// å¯¹æŒ‰é’®æ·»åŠ åŠ¨ä½œäº‹ä»¶
 		// redButton.addActionListener(new ActionListener() {
 		// @Override
 		// public void actionPerformed(ActionEvent e) {
@@ -43,7 +43,7 @@ public class FrameDemo {
 		// }
 		// });
 
-		// ¶Ô°´Å¥Ìí¼ÓÊó±êµã»÷ÊÂ¼ş
+		// å¯¹æŒ‰é’®æ·»åŠ é¼ æ ‡ç‚¹å‡»äº‹ä»¶
 		// redButton.addMouseListener(new MouseAdapter() {
 		// @Override
 		// public void mouseClicked(MouseEvent e) {
@@ -51,7 +51,7 @@ public class FrameDemo {
 		// }
 		// });
 
-		// ¶Ô°´Å¥Ìí¼ÓÊó±êµÄ½øÈëÊÂ¼ş
+		// å¯¹æŒ‰é’®æ·»åŠ é¼ æ ‡çš„è¿›å…¥äº‹ä»¶
 		redButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -94,7 +94,7 @@ public class FrameDemo {
 			}
 		});
 
-		// ÉèÖÃ´°ÌåÏÔÊ¾
+		// è®¾ç½®çª—ä½“æ˜¾ç¤º
 		f.setVisible(true);
 	}
 }
