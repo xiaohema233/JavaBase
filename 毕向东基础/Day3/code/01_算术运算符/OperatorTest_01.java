@@ -17,7 +17,7 @@
 	int y = (x++)+(++x)+(x*10);
 	请分别计算出x,y的值
 */
-class OperatorTest {
+class OperatorTest_01 {
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 10;

@@ -12,7 +12,7 @@
 			如果是true，就把表达式1作为结果。
 			如果是false，就把表达式2作为结果。
 */
-class OperatorDemo {
+class OperatorDemo_06 {
 	public static void main(String[] args) {
 		int x = 100;
 		int y = 200;

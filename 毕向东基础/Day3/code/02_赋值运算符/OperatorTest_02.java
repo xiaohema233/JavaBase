@@ -12,7 +12,7 @@
 			不是等价于 s = s + 1;
 			而是等价于 s = (s的数据类型)(s + 1);
 */
-class OperatorTest {
+class OperatorTest_02 {
 	public static void main(String[] args) {
 		//short s = 1;
 		//s = s + 1;

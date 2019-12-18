@@ -4,7 +4,7 @@
 		获取三个整数中的最大值
 		比较两个整数是否相同
 */
-class OperatorTest {
+class OperatorTest_06 {
 	public static void main(String[] args) {
 		//获取两个整数中的最大值
 		int x = 100;

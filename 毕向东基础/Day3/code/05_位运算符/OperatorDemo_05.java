@@ -6,7 +6,7 @@
 	注意：
 		要做位运算，首先要把数据转换为二进制。
 */
-class OperatorDemo {
+class OperatorDemo_05 {
 	public static void main(String[] args) {
 		//&,|,^,~
 		

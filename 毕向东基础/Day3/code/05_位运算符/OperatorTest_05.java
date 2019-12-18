@@ -3,7 +3,7 @@
 		请自己实现两个整数变量的交换
 		注意：以后讲课的过程中，我没有明确指定数据的类型，默认int类型。
 */
-class OperatorTest {
+class OperatorTest_05 {
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 20;

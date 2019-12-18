@@ -8,7 +8,7 @@
 	注意事项：
 		"=="不能写成"="。
 */
-class OperatorDemo {
+class OperatorDemo_03 {
 	public static void main(String[] args) {
 		int x = 3;
 		int y = 4;

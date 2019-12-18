@@ -12,7 +12,7 @@
 		B:/获取的是除法操作的商，%获取的是除法操作的余数
 */
 
-class OperatorDemo {
+class OperatorDemo_01 {
 	public static void main(String[] args) {
 		//定义变量
 		int x = 3;  //把3赋值给int类型的变量x

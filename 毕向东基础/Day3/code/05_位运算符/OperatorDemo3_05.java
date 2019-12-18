@@ -10,7 +10,7 @@
 			2 << 3
 
 */
-class OperatorDemo3 {
+class OperatorDemo3_05 {
 	public static void main(String[] args) {
 		//<< 把<<左边的数据乘以2的移动次幂
 		System.out.println(3 << 2); //3*2^2 = 3*4 = 12;

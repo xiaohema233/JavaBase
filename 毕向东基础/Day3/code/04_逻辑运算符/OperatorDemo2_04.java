@@ -6,7 +6,7 @@
 	开发中常用的逻辑运算符：
 		&&,||,!
 */
-class OperatorDemo2 {
+class OperatorDemo2_04 {
 	public static void main(String[] args) {
 		int a = 3;
 		int b = 4;

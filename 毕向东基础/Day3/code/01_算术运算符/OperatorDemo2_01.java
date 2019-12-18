@@ -8,7 +8,7 @@
 			
 	作用：就是对变量进行自增1或者自减1。
 */
-class OperatorDemo2 {
+class OperatorDemo2_01 {
 		public static void main(String[] args) {
 			//定义两个变量
 			int x = 3;

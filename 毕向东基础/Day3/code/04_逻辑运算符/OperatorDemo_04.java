@@ -18,7 +18,7 @@
 		!逻辑非:非false则true，非true则false。
 			特点：偶数个不改变本身。
 */
-class OperatorDemo {
+class OperatorDemo_04 {
 	public static void main(String[] args) {
 		int a = 3;
 		int b = 4;

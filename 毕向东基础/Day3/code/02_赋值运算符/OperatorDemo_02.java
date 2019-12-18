@@ -6,7 +6,7 @@
 		扩展的赋值运算符：+=,-=,*=,/=,%=
 			+= 把左边和右边做加法，然后赋值给左边。
 */
-class OperatorDemo {
+class OperatorDemo_02 {
 	public static void main(String[] args) {
 		//定义一个变量
 		int x = 10;

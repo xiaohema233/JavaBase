@@ -4,7 +4,7 @@
 		B:正号
 		C:字符串连接符
 */
-class OperatorDemo3 {
+class OperatorDemo3_01 {
 	public static void main(String[] args) {
 		//加法
 		System.out.println(3+4);
