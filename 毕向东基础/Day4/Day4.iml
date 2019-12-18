@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_选择结构(switch语句)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_循环结构(for语句)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_循环结构(while语句)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_循环结构(do...while语句)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_循环嵌套" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_跳转语句" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

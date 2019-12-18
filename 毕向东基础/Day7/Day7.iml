@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_成员变量和局部变量的区别" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_形式参数是类名的问题" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_匿名对象" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_封装和private关键字" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_this关键字" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_构造方法" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_成员方法" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09_面向对象练习" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_static关键字" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

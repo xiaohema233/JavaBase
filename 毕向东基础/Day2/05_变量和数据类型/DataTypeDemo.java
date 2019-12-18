@@ -47,9 +47,9 @@ class DataTypeDemo {
 		System.out.println(i);
 		
 		//超过了int的范围
-		//int j = 1000000000000;
+//		int j = 1000000000000;
 		long j = 1000000000000L;
-		//long j = 100L;
+//		long j = 100L;
 		System.out.println(j);
 		
 		//定义浮点数据变量

@@ -13,7 +13,7 @@
 class DataTypeDemo3 {
 	public static void main(String[] args) {
 		//直接输出的方式做加法
-		//System.out.println(3 + 4);
+		System.out.println(3 + 4);
 	
 		//两个int类型做加法
 		int x = 3;
