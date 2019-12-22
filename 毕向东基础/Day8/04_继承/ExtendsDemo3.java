@@ -33,7 +33,7 @@
 		采用假设法。
 			如果有两个类A,B。只有他们符合A是B的一种，或者B是A的一种，就可以考虑使用继承。
 */
-class Father {
+class Father_3 {
 	private int num = 10;
 	public int num2 = 20;
 	
@@ -49,7 +49,7 @@ class Father {
 	}
 }
 
-class Son extends Father {
+class Son_3 extends Father_3 {
 	public void function() {
 		//num可以在Father中访问private
 		//System.out.println(num); //子类不能继承父类的私有成员变量
@@ -60,7 +60,7 @@ class Son extends Father {
 class ExtendsDemo3 {
 	public static void main(String[] args) {
 		// 创建对象
-		Son s = new Son();
+		Son_3 s = new Son_3();
 		//s.method(); //子类不能继承父类的私有成员方法
 		s.show();
 		s.function();

@@ -7,25 +7,25 @@
 			
 			注意：子类每一个构造方法的第一条语句默认都是：super();
 */
-class Father {
+class Father_6 {
 	int age;
 
-	public Father() {
+	public Father_6() {
 		System.out.println("Father的无参构造方法");
 	}
 	
-	public Father(String name) {
+	public Father_6(String name) {
 		System.out.println("Father的带参构造方法");
 	}
 }
 
-class Son extends Father {
-	public Son() {
+class Son_6 extends Father_6 {
+	public Son_6() {
 		//super();
 		System.out.println("Son的无参构造方法");
 	}
 	
-	public Son(String name) {
+	public Son_6(String name) {
 		//super();
 		System.out.println("Son的带参构造方法");
 	}
@@ -34,8 +34,8 @@ class Son extends Father {
 class ExtendsDemo6 {
 	public static void main(String[] args) {
 		//创建对象
-		Son s = new Son();
+		Son_6 s = new Son_6();
 		System.out.println("------------");
-		Son s2 = new Son("林青霞");
+		Son_6 s2 = new Son_6("林青霞");
 	}
 }

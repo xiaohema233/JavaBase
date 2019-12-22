@@ -14,7 +14,7 @@
 				c:在父类的成员范围找，有就使用
 				d:如果还找不到，就报错。
 */
-class Father {
+class Father_4 {
 	public int num = 10;
 	
 	public void method() {
@@ -22,7 +22,7 @@ class Father {
 	}
 }
 
-class Son extends Father {
+class Son_4 extends Father_4 {
 	public int num2 = 20;
 	public int num = 30;
 	
@@ -31,14 +31,14 @@ class Son extends Father {
 		System.out.println(num);
 		System.out.println(num2);
 		// 找不到符号
-		System.out.println(num3);
+//		System.out.println(num3);
 	}
 }
 
 class ExtendsDemo4 {
 	public static void main(String[] args) {
 		//创建对象
-		Son s = new Son();
+		Son_4 s = new Son_4();
 		s.show();
 	}
 }

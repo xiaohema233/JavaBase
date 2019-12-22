@@ -11,26 +11,26 @@
 		this(...)或者super(...)必须出现在第一条语句上。
 		如果不是放在第一条语句上，就可能对父类的数据进行了多次初始化，所以必须放在第一条语句上。
 */
-class Father {
+class Father_7 {
 	/*
 	public Father() {
 		System.out.println("Father的无参构造方法");
 	}
 	*/
 	
-	public Father(String name) {
+	public Father_7(String name) {
 		System.out.println("Father的带参构造方法");
 	}
 }
 
-class Son extends Father {
-	public Son() {
+class Son_7 extends Father_7 {
+	public Son_7() {
 		super("随便给");
 		System.out.println("Son的无参构造方法");
 		//super("随便给");
 	}
 	
-	public Son(String name) {
+	public Son_7(String name) {
 		//super("随便给");
 		this();
 		System.out.println("Son的带参构造方法");
@@ -39,8 +39,8 @@ class Son extends Father {
 
 class ExtendsDemo7 {
 	public static void main(String[] args) {
-		Son s = new Son();
+		Son_7 s = new Son_7();
 		System.out.println("----------------");
-		Son ss = new Son("林青霞");
+		Son_7 ss = new Son_7("林青霞");
 	}
 }

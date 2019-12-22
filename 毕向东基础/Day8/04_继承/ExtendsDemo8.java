@@ -7,13 +7,13 @@
 				b:再看父类中，有没有这个方法，有就使用
 				c:如果没有就报错。
 */
-class Father {
+class Father_8 {
 	public void show() {
 		System.out.println("show Father");
 	}
 }
 
-class Son extends Father {
+class Son_8 extends Father_8 {
 	public void method() {
 		System.out.println("method Son");
 	}
@@ -26,7 +26,7 @@ class Son extends Father {
 class ExtendsDemo8 {
 	public static void main(String[] args) {
 		//创建对象
-		Son s = new Son();
+		Son_8 s = new Son_8();
 		s.show();
 		s.method();
 		//s.fucntion(); //找不到符号

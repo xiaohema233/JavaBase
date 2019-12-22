@@ -45,7 +45,7 @@ class Teacher {
 */
 
 //使用继承后
-class Person {
+class Person_1 {
 	public void eat() {
 		System.out.println("吃饭");
 	}
@@ -55,18 +55,18 @@ class Person {
 	}
 }
 
-class Student extends Person {}
+class Student_1 extends Person_1 {}
 
-class Teacher extends Person {}
+class Teacher_1 extends Person_1 {}
 
 class ExtendsDemo {
 	public static void main(String[] args) {
-		Student s = new Student();
+		Student_1 s = new Student_1();
 		s.eat();
 		s.sleep();
 		System.out.println("-------------");
 		
-		Teacher t = new Teacher();
+		Teacher_1 t = new Teacher_1();
 		t.eat();
 		t.sleep();
 	}

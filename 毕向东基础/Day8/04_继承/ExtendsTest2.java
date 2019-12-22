@@ -14,7 +14,7 @@
 		构造代码块Zi
 		构造方法Zi
 */
-class Fu {
+class Fu_2 {
 	static {
 		System.out.println("静态代码块Fu");
 	}
@@ -23,12 +23,12 @@ class Fu {
 		System.out.println("构造代码块Fu");
 	}
 
-	public Fu() {
+	public Fu_2() {
 		System.out.println("构造方法Fu");
 	}
 }
 
-class Zi extends Fu {
+class Zi_2 extends Fu_2 {
 	static {
 		System.out.println("静态代码块Zi");
 	}
@@ -37,13 +37,13 @@ class Zi extends Fu {
 		System.out.println("构造代码块Zi");
 	}
 
-	public Zi() {
+	public Zi_2() {
 		System.out.println("构造方法Zi");
 	}
 }
 
 class ExtendsTest2 {
 	public static void main(String[] args) {
-		Zi z = new Zi();
+		Zi_2 z = new Zi_2();
 	}
 }

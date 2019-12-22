@@ -9,7 +9,7 @@
 			
 		子类重写父类方法的时候，最好声明一模一样。
 */
-class Father {
+class Father_10 {
 	//private void show() {}
 	
 	/*
@@ -32,7 +32,7 @@ class Father {
 	}
 }
 
-class Son extends Father {
+class Son_10 extends Father_10 {
 	//private void show() {}
 
 	/*
@@ -46,9 +46,9 @@ class Son extends Father {
 	}
 	
 	
-	public static void method() {
-	
-	}
+//	public static void method() {
+//
+//	}
 	
 	/*
 	public void method() {
@@ -59,7 +59,7 @@ class Son extends Father {
 
 class ExtendsDemo10 {
 	public static void main(String[] args) {
-		Son s = new Son();
+		Son_10 s = new Son_10();
 		s.show();
 	}
 }

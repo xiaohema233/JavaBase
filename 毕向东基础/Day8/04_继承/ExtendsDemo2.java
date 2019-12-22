@@ -12,23 +12,23 @@ class Son exnteds Father {} //正确的
 class Son extends Father,Mother {} // 错误的
 */
 
-class GrandFather {
+class GrandFather_2 {
 	public void show() {
 		System.out.println("我是爷爷");
 	}
 }
 
-class Father extends GrandFather {
+class Father_2 extends GrandFather_2 {
 	public void method(){
 		System.out.println("我是老子");
 	}
 }
 
-class Son extends Father {}
+class Son_2 extends Father_2 {}
 
 class ExtendsDemo2 {
 	public static void main(String[] args) {
-		Son s = new Son();
+		Son_2 s = new Son_2();
 		s.method(); //使用父亲的
 		s.show(); //使用爷爷的
 	}

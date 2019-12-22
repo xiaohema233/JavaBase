@@ -21,11 +21,11 @@
 				this.成员方法 调用本类的成员方法
 				super.成员方法 调用父类的成员方法
 */
-class Father {
+class Father_5 {
 	public int num = 10;
 }
 
-class Son extends Father {
+class Son_5 extends Father_5 {
 	public int num = 20;
 	
 	public void show() {
@@ -38,7 +38,7 @@ class Son extends Father {
 
 class ExtendsDemo5 {
 	public static void main(String[] args) {
-		Son s = new Son();
+		Son_5 s = new Son_5();
 		s.show();
 	}
 }
