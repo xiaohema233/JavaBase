@@ -24,7 +24,7 @@
 				举例：cn.itcast,com.baidu				
 		B:类或者接口
 			一个单词：首字母大写
-				举例：Student,Demo
+				举例：Student_04,Demo_04
 			多个单词：每个单词首字母大写
 				举例：HelloWorld,StudentName
 		C:方法或者变量

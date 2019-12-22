@@ -21,17 +21,17 @@ class Student {
 	int age; //0
 	//地址
 	String address; //null
-	
+
 	//学习
 	public void study() {
 		System.out.println("学生爱学习");
 	}
-	
+
 	//吃饭
 	public void eat() {
 		System.out.println("学习饿了，要吃饭");
 	}
-	
+
 	//睡觉
 	public void sleep() {
 		System.out.println("学习累了，要睡觉");

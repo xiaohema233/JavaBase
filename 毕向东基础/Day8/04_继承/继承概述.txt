@@ -1,10 +1,10 @@
 首先我来写两个代码：
 	//定义学生类
-	class Student {
+	class Student_04 {
 		String name;
 		int age;
 		
-		public Student(){}
+		public Student_04(){}
 		
 		//getXxx()/setXxx()
 	
@@ -60,8 +60,8 @@
 		}
 	}
 	
-	class Student extends Person {
-		public Student(){}
+	class Student_04 extends Person {
+		public Student_04(){}
 	}
 	
 	class Teacher extends Person {

@@ -14,7 +14,7 @@
 				getXxx()/setXxx()
 				show();
 */
-class Employee {
+class Employee_09 {
 	//员工编号
 	private String employeeId;
 	//姓名
@@ -23,7 +23,7 @@ class Employee {
 	private int age;
 	
 	//构造方法
-	public Employee() {}
+	public Employee_09() {}
 	
 	//getXxx()/setXxx()
 	public String getEmployeeId() {
@@ -56,10 +56,10 @@ class Employee {
 	}
 }
 
-class EmployeeTest {
+class EmployeeTest_09 {
 	public static void main(String[] args) {
 		//创建对象
-		Employee e = new Employee();
+		Employee_09 e = new Employee_09();
 		
 		//给成员变量赋值
 		e.setEmployeeId("czbk9527");

@@ -29,11 +29,11 @@ class Array2Demo {
 		 //这个二维数组有3个一维数组的元素
 		 //每一个一维数组有2个元素
 		 //输出二维数组名称
-		 System.out.println(arr); //地址值	[[I@175078b
+		 System.out.println(arr); //地址值	[[I@7c30a502
 		 //输出二维数组的第一个元素一维数组的名称
-		 System.out.println(arr[0]); //地址值	[I@42552c
-		 System.out.println(arr[1]); //地址值	[I@e5bbd6
-		 System.out.println(arr[2]); //地址值	[I@8ee016
+		 System.out.println(arr[0]); //地址值	[I@49e4cb85
+		 System.out.println(arr[1]); //地址值	[I@2133c8f8
+		 System.out.println(arr[2]); //地址值	[I@43a25848
 		 //输出二维数组的元素
 		 System.out.println(arr[0][0]); //0
 		 System.out.println(arr[0][1]); //0

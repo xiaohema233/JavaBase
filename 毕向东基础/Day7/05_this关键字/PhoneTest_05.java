@@ -12,7 +12,7 @@
 			创建一个对象，先通过getXxx()方法输出成员变量的值。这一次的结果是：null---0---null
 			然后通过setXxx()方法给成员变量赋值。再次输出结果。这一次的结果是：三星---2999---土豪金
 */
-class Phone {
+class Phone_05 {
 	//品牌
 	private String brand;
 	//价格
@@ -46,10 +46,10 @@ class Phone {
 	}
 }
 
-class PhoneTest {
+class PhoneTest_05 {
 	public static void main(String[] args) {
 		//创建手机对象
-		Phone p = new Phone();
+		Phone_05 p = new Phone_05();
 		
 		//直接输出默认值
 		System.out.println(p.getBrand()+"---"+p.getPrice()+"---"+p.getColor());

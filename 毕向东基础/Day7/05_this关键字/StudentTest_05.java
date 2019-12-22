@@ -9,7 +9,7 @@
 		解决局部变量隐藏成员变量
 */
 //定义学生类
-class Student {
+class Student_05_2 {
 	//姓名
 	private String name;
 	//年龄
@@ -43,10 +43,10 @@ class Student {
 }
 
 //测试类
-class StudentTest {
+class StudentTest_05 {
 	public static void main(String[] args) {
 		//创建学生对象
-		Student s = new Student();
+		Student_05_2 s = new Student_05_2();
 		
 		//给成员变量赋值
 		s.setName("林青霞");

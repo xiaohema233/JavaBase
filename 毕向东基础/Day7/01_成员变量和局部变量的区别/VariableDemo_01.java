@@ -16,9 +16,9 @@
 		注意事项：
 			局部变量名称可以和成员变量名称一样，在方法中使用的时候，采用的是就近原则。
 */
-class Varialbe {
+class Varialbe_01 {
 	//成员变量
-	//int num = 10;
+//	int num = 10;
 	int num; //0
 	
 	public void show() {
@@ -28,15 +28,15 @@ class Varialbe {
 		int num2 = 20;
 		System.out.println(num2);
 		
-		//int num = 100;
+//		int num = 100;
 		System.out.println(num);
 	}
 }
 
 
-class VariableDemo {
+class VariableDemo_01 {
 	public static void main(String[] args) {
-		Varialbe v = new Varialbe();
+		Varialbe_01 v = new Varialbe_01();
 		
 		System.out.println(v.num); //访问成员变量
 		

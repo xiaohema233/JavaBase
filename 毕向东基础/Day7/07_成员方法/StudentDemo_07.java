@@ -12,7 +12,7 @@
 				空参方法
 				非空参方法
 */
-class Student {
+class Student_07 {
 	public String getString() {
 		return "helloworld";
 	}
@@ -30,10 +30,10 @@ class Student {
 	}
 }
 
-class StudentDemo {
+class StudentDemo_07 {
 	public static void main(String[] args) {
 		//创建对象
-		Student s = new Student();
+		Student_07 s = new Student_07();
 		
 		//调用无参无返回值方法
 		s.show();

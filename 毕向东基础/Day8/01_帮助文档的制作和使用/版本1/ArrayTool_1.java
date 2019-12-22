@@ -1,7 +1,7 @@
-class ArrayTool {
+class ArrayTool_1 {
 	
 	//把构造方法私有，外界就不能在创建对象了
-	private ArrayTool(){}
+	private ArrayTool_1(){}
 
 	public static void printArray(int[] arr) {
 		for(int x=0; x<arr.length; x++) {

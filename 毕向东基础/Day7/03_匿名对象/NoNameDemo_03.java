@@ -8,22 +8,22 @@
 				有，匿名对象调用完毕就是垃圾。可以被垃圾回收器回收。
 		B:匿名对象可以作为实际参数传递
 */
-class Student {
+class Student_03 {
 	public void show() {
 		System.out.println("我爱学习");
 	}
 }
 
-class StudentDemo {
-	public void method(Student s) {
+class StudentDemo_03 {
+	public void method(Student_03 s) {
 		s.show();
 	}
 }
 
-class NoNameDemo {
+class NoNameDemo_03 {
 	public static void main(String[] args) {
 		//带名字的调用
-		Student s = new Student();
+		Student_03 s = new Student_03();
 		s.show();
 		s.show();
 		System.out.println("--------------");
@@ -31,19 +31,19 @@ class NoNameDemo {
 		//匿名对象
 		//new Student();
 		//匿名对象调用方法
-		new Student().show();
-		new Student().show(); //这里其实是重新创建了一个新的对象
+		new Student_03().show();
+		new Student_03().show(); //这里其实是重新创建了一个新的对象
 		System.out.println("--------------");
 		
 		
 		//匿名对象作为实际参数传递
-		StudentDemo sd = new StudentDemo();
+		StudentDemo_03 sd = new StudentDemo_03();
 		//Student ss = new Student();
 		//sd.method(ss); //这里的s是一个实际参数
 		//匿名对象
-		sd.method(new Student());
+		sd.method(new Student_03());
 		
 		//在来一个
-		new StudentDemo().method(new Student());
+		new StudentDemo_03().method(new Student_03());
  	}
 }

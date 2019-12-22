@@ -7,19 +7,19 @@
 		B:没有返回值类型，连void都没有
 		C:没有具体的返回值
 */
-class Student {
+class Student_06 {
 	private String name; //null
 	private int age; //0
 	
-	public Student() {
+	public Student_06() {
 		System.out.println("这是构造方法");
 	}
 }
 
-class ConstructDemo {
+class ConstructDemo_06 {
 	public static void main(String[] args) {
 		//创建对象
-		Student s = new Student();
+		Student_06 s = new Student_06();
 		System.out.println(s); //Student@e5bbd6
 	}
 }

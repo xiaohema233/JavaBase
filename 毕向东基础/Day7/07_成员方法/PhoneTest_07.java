@@ -7,7 +7,7 @@
 		成员方法：getXxx()/setXxx()
 */
 //定义手机类
-class Phone {
+class Phone_07 {
 	//品牌
 	private String brand;
 	//价格
@@ -16,7 +16,7 @@ class Phone {
 	private String color;
 	
 	//无参构造方法
-	public Phone() {}
+	public Phone_07() {}
 	
 	//getXxx()和setXxx()方法
 	public String getBrand() {
@@ -45,10 +45,10 @@ class Phone {
 }
 
 //手机测试类
-class PhoneTest {
+class PhoneTest_07 {
 	public static void main(String[] args) {
 		//创建对象
-		Phone p = new Phone();
+		Phone_07 p = new Phone_07();
 		
 		//给成员变量赋值
 		p.setBrand("诺基亚");

@@ -1,6 +1,6 @@
 /**
 * 这是针对数组进行操作的工具类
-* @author 刘意
+* @author maple
 * @version V.10
 */
 public class ArrayTool {

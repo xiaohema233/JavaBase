@@ -16,7 +16,7 @@
 			
 			静态修饰的内容一般我们称其为：与类相关的，类成员
 */
-class Student {
+class Student_10 {
 	//非静态变量
 	int num = 10;
 	
@@ -24,12 +24,12 @@ class Student {
 	static int num2 = 20;
 }
 
-class StudentDemo {
+class StudentDemo_10 {
 	public static void main(String[] args) {
-		Student s = new Student();
+		Student_10 s = new Student_10();
 		System.out.println(s.num);
 		
-		System.out.println(Student.num2);
+		System.out.println(Student_10.num2);
 		System.out.println(s.num2);
 	}
 }

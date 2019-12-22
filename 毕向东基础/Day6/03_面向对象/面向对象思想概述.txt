@@ -31,7 +31,7 @@
 			C:关闭冰箱门
 			
 		代码体现；
-			class Demo {
+			class Demo_04 {
 				public static void main(String[] args) {
 					/*
 					System.out.println("打开冰箱门");
@@ -75,14 +75,14 @@
 			A:有哪些类呢?
 				大象
 				冰箱
-				Demo
+				Demo_04
 			B:每个类有哪些东西呢?
 				大象：
 					进去
 				冰箱：
 					开门
 					关门
-				Demo:
+				Demo_04:
 					main方法
 			C:类与类直接的关系是什么呢?
 				Demo中使用大象和冰箱类的功能。
@@ -104,7 +104,7 @@
 				}
 			}
 			
-			class Demo {
+			class Demo_04 {
 				public static void main(String[] args) {
 					冰箱调用开门
 					大象调用进去

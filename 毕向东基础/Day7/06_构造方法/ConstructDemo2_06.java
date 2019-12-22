@@ -11,27 +11,27 @@
 		B:构造方法
 */
 
-class Student {
+class Student_06_1 {
 	private String name;
 	private int age;
 
-	public Student() {
+	public Student_06_1() {
 		//System.out.println("我给了，你还给不");
 		System.out.println("这是无参构造方法");
 	}
 	
 	//构造方法的重载格式
-	public Student(String name) {
+	public Student_06_1(String name) {
 		System.out.println("这是带一个String类型的构造方法");
 		this.name = name;
 	}
 	
-	public Student(int age) {
+	public Student_06_1(int age) {
 		System.out.println("这是带一个int类型的构造方法");
 		this.age = age;
 	}
 	
-	public Student(String name,int age) {
+	public Student_06_1(String name, int age) {
 		System.out.println("这是一个带多个参数的构造方法");
 		this.name = name;
 		this.age = age;
@@ -42,25 +42,25 @@ class Student {
 	}
 }
 
-class ConstructDemo2 {
+class ConstructDemo2_06 {
 	public static void main(String[] args) {
 		//创建对象
-		Student s = new Student();
+		Student_06_1 s = new Student_06_1();
 		s.show();
 		System.out.println("-------------");
 		
 		//创建对象2
-		Student s2 = new Student("林青霞");
+		Student_06_1 s2 = new Student_06_1("林青霞");
 		s2.show();
 		System.out.println("-------------");
 		
 		//创建对象3
-		Student s3 = new Student(27);
+		Student_06_1 s3 = new Student_06_1(27);
 		s3.show();
 		System.out.println("-------------");
 		
 		//创建对象4
-		Student s4 = new Student("林青霞",27);
+		Student_06_1 s4 = new Student_06_1("林青霞",27);
 		s4.show();
 	}
 }

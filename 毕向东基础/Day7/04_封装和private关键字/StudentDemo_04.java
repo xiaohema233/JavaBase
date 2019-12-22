@@ -28,7 +28,7 @@
 	其实我讲到现在讲解的是一个封装的思想。
 	封装：是指隐藏对象的属性和实现细节，仅对外提供公共访问方式。
 */
-class Student {
+class Student_04 {
 	//姓名
 	String name;
 	//年龄
@@ -55,10 +55,10 @@ class Student {
 	}
 }
 
-class StudentDemo {
+class StudentDemo_04 {
 	public static void main(String[] args) {
 		//创建学生对象
-		Student s = new Student();
+		Student_04 s = new Student_04();
 		s.show();
 		System.out.println("--------------");
 		

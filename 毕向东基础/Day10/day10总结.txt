@@ -51,7 +51,7 @@
 		protected	Y		Y			Y
 		public		Y		Y			Y				Y
 	(2)这四种权限修饰符在任意时刻只能出现一种。
-		public class Demo {}		
+		public class Demo_04 {}
 
 5:常见的修饰符(理解)
 	(1)分类：

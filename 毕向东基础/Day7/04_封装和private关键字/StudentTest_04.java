@@ -4,7 +4,7 @@
 		B:提高对应的getXxx()和setXxx()方法
 */
 //定义学生类
-class Student {
+class Student_04_1 {
 	//姓名
 	private String name;
 	//年龄
@@ -32,10 +32,10 @@ class Student {
 }
 
 //测试类
-class StudentTest {
+class StudentTest_04 {
 	public static void main(String[] args) {
 		//创建学生对象
-		Student s = new Student();
+		Student_04_1 s = new Student_04_1();
 		
 		//使用成员变量
 		//错误：被私有修饰了，外界不能直接访问了

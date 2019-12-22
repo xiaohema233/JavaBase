@@ -35,7 +35,7 @@ class Demo {
 //方式2可以满足我们的要求，但是呢我们学习过来面向对象的思想。
 //我就再想，a，b可不可以定义为成员变量呢?
 //如果可以，我们再改进一版
-class Demo {
+class Demo_09 {
 	int a;
 	int b;
 	
@@ -52,7 +52,7 @@ class Demo {
 //同理：成员变量其实是用来描述类的。
 
 //测试类
-class Test {
+class Test_09 {
 	public static void main(String[] args) {
 		//创建对象
 		//方式1测试
@@ -70,7 +70,7 @@ class Test {
 		*/
 		
 		//方式3测试
-		Demo d = new Demo();
+		Demo_09 d = new Demo_09();
 		d.a = 10;
 		d.b = 20;
 		System.out.println(d.sum());

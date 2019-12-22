@@ -4,7 +4,7 @@
 		可以修饰成员变量和成员方法
 		被其修饰的成员只能在本类中被访问
 */
-class Demo {
+class Demo_04 {
 	//int num = 10;
 	//用private修饰
 	private int num = 10;
@@ -22,9 +22,9 @@ class Demo {
 	}
 }
 
-class PrivateDemo {
+class PrivateDemo_04 {
 	public static void main(String[] args) {
-		Demo d = new Demo();
+		Demo_04 d = new Demo_04();
 		//不能方法私有的成员变量
 		//System.out.println(d.num);
 		d.show();

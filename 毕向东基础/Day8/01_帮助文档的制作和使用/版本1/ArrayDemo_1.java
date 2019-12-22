@@ -3,7 +3,7 @@
 	
 	在同一个文件夹下，类定义在两个文件中和定义在一个文件中其实一样的。
 */
-class ArrayDemo {
+class ArrayDemo_1 {
 	public static void main(String[] args) {
 		//定义数组
 		int[] arr = {28,55,37,46,19};
@@ -37,7 +37,7 @@ class ArrayDemo {
 		//at.printArray(arr);
 		
 		//方法改进为静态后，就可以直接通过类名调用
-		ArrayTool.printArray(arr);
+		ArrayTool_1.printArray(arr);
 	}
 	
 	/*
