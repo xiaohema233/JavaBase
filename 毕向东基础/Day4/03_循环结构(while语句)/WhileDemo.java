@@ -26,12 +26,12 @@ class WhileDemo {
 			System.out.println("HelloWorld");
 		}
 		System.out.println("--------------");
+
 		//while语句版
 		int x=0;
 		while(x<10) {
 			System.out.println("HelloWorld");
 			x++;
 		}
-		
 	}
 }

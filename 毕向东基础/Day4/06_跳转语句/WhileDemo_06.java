@@ -19,7 +19,7 @@
 				daySum += dayMoney;
 		F:因为不知道是多少天，所以我用死循环，一旦超过100元我就退出循环。
 */
-class WhileDemo {
+class WhileDemo_06 {
 	public static void main(String[] args) {
 		//每天要存储的钱是2.5元
 		double dayMoney = 2.5;

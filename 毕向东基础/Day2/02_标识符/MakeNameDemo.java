@@ -19,10 +19,10 @@
 		包：其实就是文件夹，用于把相同的类名进行区分
 			全部小写
 		
-			单级：liuyi
-			多级：cn.itcast
-				cn
-					itcast
+			单级：maple
+			多级：com.maple
+				com
+					maple
 					
 		类或者接口：
 			一个单词：单词的首字母必须大写

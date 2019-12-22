@@ -28,6 +28,7 @@ class WhileDemo2 {
 		
 		System.out.println("sum:"+sum);
 		System.out.println("--------");
+
 		//while语句版本
 		int sum2 = 0;
 		

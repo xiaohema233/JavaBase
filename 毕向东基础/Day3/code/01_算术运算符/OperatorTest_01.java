@@ -38,7 +38,7 @@ class OperatorTest_01 {
 		//4+6+60
 		//x=5,6
 		
-		System.out.println("x:"+x);
-		System.out.println("y:"+y);
+		System.out.println("x:"+x); //6
+		System.out.println("y:"+y); //70
 	}
 }

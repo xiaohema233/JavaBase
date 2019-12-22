@@ -32,7 +32,7 @@ class ForDemo3 {
 								3 + 3 = 6
 								...
 			*/
-			
+
 			//sum += x;
 		}
 		

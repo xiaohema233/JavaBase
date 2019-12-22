@@ -5,6 +5,7 @@
 		
 	那么，我们一般使用哪种循环呢?
 		优先考虑for，其次考虑while，最后考虑do...while
+		for > while > do...while
 */
 class DoWhileDemo2 {
 	public static void main(String[] args) {

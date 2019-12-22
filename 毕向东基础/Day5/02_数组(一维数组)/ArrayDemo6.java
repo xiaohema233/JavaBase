@@ -14,7 +14,7 @@ class ArrayDemo6 {
 		//定义数组
 		int[] arr = {1,2,3};
 		
-		//System.out.println(arr[3]);
+//		System.out.println(arr[3]);
 	
 		//引用类型的常量：空常量 null
 		arr = null;

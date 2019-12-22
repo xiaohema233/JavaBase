@@ -16,6 +16,15 @@ class FunctionTest6 {
 		System.out.println("short:"+compare(s1,s2));
 		
 		//后面的两个自己测试
+		//测试
+		int i1 = 5;
+		int i2 = 5;
+		System.out.println("int:"+compare(i1,i2));
+
+		//测试
+		long l1 = 5;
+		long l2 = 5;
+		System.out.println("long:"+compare(l1,l2));
 	}
 	
 	//byte类型
