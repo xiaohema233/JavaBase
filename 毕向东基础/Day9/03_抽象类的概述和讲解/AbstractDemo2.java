@@ -9,13 +9,13 @@
 		A:抽象方法 强制要求子类做的事情。
 		B:非抽象方法 子类继承的事情，提高代码复用性。
 */
-abstract class Animal {
+abstract class Animal_2 {
 	public int num = 10;
 	public final int num2 = 20;
 
-	public Animal() {}
+	public Animal_2() {}
 	
-	public Animal(String name,int age){}
+	public Animal_2(String name,int age){}
 	
 	public abstract void show();
 	
@@ -24,7 +24,7 @@ abstract class Animal {
 	}
 }
 
-class Dog extends Animal {
+class Dog_2 extends Animal_2 {
 	public void show() {
 		System.out.println("show Dog");
 	}
@@ -33,7 +33,7 @@ class Dog extends Animal {
 class AbstractDemo2 {
 	public static void main(String[] args) {
 		//创建对象
-		Animal a = new Dog();
+		Animal_2 a = new Dog_2();
 		a.num = 100;
 		System.out.println(a.num);
 		//a.num2 = 200;

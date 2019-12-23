@@ -133,5 +133,20 @@ class ExtendsTest5 {
 		c2.playGame();
 		
 		//作业：测试狗
+		//方式1
+		Dog d1 = new Dog();
+		d1.setName("2b");
+		d1.setAge(2);
+		d1.setColor("白色");
+		System.out.println("狗的名字是："+d1.getName()+";年龄是："+d1.getAge()+";颜色是："+d1.getColor());
+		d1.eat();
+		d1.lookDoor();
+		System.out.println("---------------");
+
+		//方式2
+		Dog d2 = new Dog("咖啡",2,"咖啡色");
+		System.out.println("狗的名字是："+d2.getName()+";年龄是："+d2.getAge()+";颜色是："+d2.getColor());
+		d2.eat();
+		d2.lookDoor();
 	}
 }

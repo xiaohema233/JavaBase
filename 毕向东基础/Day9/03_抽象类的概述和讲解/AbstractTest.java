@@ -38,15 +38,15 @@
 			重写吃饭();
 */
 //定义抽象的动物类
-abstract class Animal {
+abstract class Animal_t1 {
 	//姓名
 	private String name;
 	//年龄
 	private int age;
 	
-	public Animal() {}
+	public Animal_t1() {}
 	
-	public Animal(String name,int age) {
+	public Animal_t1(String name,int age) {
 		this.name = name;
 		this.age = age;
 	}
@@ -72,10 +72,10 @@ abstract class Animal {
 }
 
 //定义具体的狗类
-class Dog extends Animal {
-	public Dog() {}
+class Dog_t1 extends Animal_t1 {
+	public Dog_t1() {}
 	
-	public Dog(String name,int age) {
+	public Dog_t1(String name,int age) {
 		super(name,age);
 	}
 	
@@ -85,10 +85,10 @@ class Dog extends Animal {
 }
 
 //定义具体的猫类
-class Cat extends Animal {
-	public Cat() {}
+class Cat_t1 extends Animal_t1 {
+	public Cat_t1() {}
 	
-	public Cat(String name,int age) {
+	public Cat_t1(String name,int age) {
 		super(name,age);
 	}
 	
@@ -103,24 +103,24 @@ class AbstractTest {
 		//测试狗类
 		//具体类用法
 		//方式1：
-		Dog d = new Dog();
+		Dog_t1 d = new Dog_t1();
 		d.setName("旺财");
 		d.setAge(3);
 		System.out.println(d.getName()+"---"+d.getAge());
 		d.eat();
 		//方式2：
-		Dog d2 = new Dog("旺财",3);
+		Dog_t1 d2 = new Dog_t1("旺财",3);
 		System.out.println(d2.getName()+"---"+d2.getAge());
 		d2.eat();
 		System.out.println("---------------------------");
-		
-		Animal a = new Dog();
+
+		Animal_t1 a = new Dog_t1();
 		a.setName("旺财");
 		a.setAge(3);
 		System.out.println(a.getName()+"---"+a.getAge());
 		a.eat();
-		
-		Animal a2 = new Dog("旺财",3);
+
+		Animal_t1 a2 = new Dog_t1("旺财",3);
 		System.out.println(a2.getName()+"---"+a2.getAge());
 		a2.eat();
 		

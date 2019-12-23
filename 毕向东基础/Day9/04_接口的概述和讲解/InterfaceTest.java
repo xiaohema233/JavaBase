@@ -37,15 +37,15 @@ interface Jumpping {
 }
 
 //定义抽象类
-abstract class Animal {
+abstract class Animal_i {
 	//姓名
 	private String name;
 	//年龄
 	private int age;
 	
-	public Animal() {}
+	public Animal_i() {}
 	
-	public Animal(String name,int age) {
+	public Animal_i(String name,int age) {
 		this.name = name;
 		this.age = age;
 	}
@@ -76,10 +76,10 @@ abstract class Animal {
 }
 
 //具体猫类
-class Cat extends Animal {
-	public Cat(){}
+class Cat_i extends Animal_i {
+	public Cat_i(){}
 	
-	public Cat(String name,int age) {
+	public Cat_i(String name,int age) {
 		super(name,age);
 	}
 	
@@ -89,10 +89,10 @@ class Cat extends Animal {
 }
 
 //具体狗类
-class Dog extends Animal {
-	public Dog(){}
+class Dog_i extends Animal_i {
+	public Dog_i(){}
 	
-	public Dog(String name,int age) {
+	public Dog_i(String name,int age) {
 		super(name,age);
 	}
 	
@@ -102,7 +102,7 @@ class Dog extends Animal {
 }
 
 //有跳高功能的猫
-class JumpCat extends Cat implements Jumpping {
+class JumpCat extends Cat_i implements Jumpping {
 	public JumpCat() {}
 	
 	public JumpCat(String name,int age) {
@@ -115,7 +115,7 @@ class JumpCat extends Cat implements Jumpping {
 }
 
 //有跳高功能的狗
-class JumpDog extends Dog implements Jumpping {
+class JumpDog extends Dog_i implements Jumpping {
 	public JumpDog() {}
 	
 	public JumpDog(String name,int age) {

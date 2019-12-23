@@ -15,13 +15,13 @@
 		向下转型：
 			Zi z = (Zi)f; //要求该f必须是能够转换为Zi的。
 */
-class Fu {
+class Fu_4 {
 	public void show() {
 		System.out.println("show fu");
 	}
 }
 
-class Zi extends Fu {
+class Zi_4 extends Fu_4 {
 	public void show() {
 		System.out.println("show zi");
 	}
@@ -35,18 +35,18 @@ class Zi extends Fu {
 class DuoTaiDemo4 {
 	public static void main(String[] args) {
 		//测试
-		Fu f = new Zi();
+		Fu_4 f = new Zi_4();
 		f.show();
-		//f.method();
+//		f.method();
 		
 		//创建子类对象
-		//Zi z = new Zi();
-		//z.show();
-		//z.method();
+		Zi_4 z_1 = new Zi_4();
+		z_1.show();
+		z_1.method();
 		
 		//你能够把子的对象赋值给父亲，那么我能不能把父的引用赋值给子的引用呢?
 		//如果可以，但是如下
-		Zi z = (Zi)f;
+		Zi_4 z = (Zi_4)f;
 		z.show();
 		z.method();
 	}

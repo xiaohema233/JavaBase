@@ -30,7 +30,7 @@
 			
 		由于成员方法存在方法重写，所以它运行看右边。
 */
-class Fu {
+class Fu_2 {
 	public int num = 100;
 
 	public void show() {
@@ -42,7 +42,7 @@ class Fu {
 	}
 }
 
-class Zi extends Fu {
+class Zi_2 extends Fu_2 {
 	public int num = 1000;
 	public int num2 = 200;
 
@@ -63,7 +63,7 @@ class DuoTaiDemo {
 	public static void main(String[] args) {
 		//要有父类引用指向子类对象。
 		//父 f =  new 子();
-		Fu f = new Zi();
+		Zi_2 f = new Zi_2();
 		System.out.println(f.num);
 		//找不到符号
 		//System.out.println(f.num2);

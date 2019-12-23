@@ -1,13 +1,13 @@
 /*
 	多态练习：猫狗案例
 */
-class Animal {
+class Animal_t {
 	public void eat(){
 		System.out.println("吃饭");
 	}
 }
 
-class Dog extends Animal {
+class Dog_t extends Animal_t {
 	public void eat() {
 		System.out.println("狗吃肉");
 	}
@@ -17,7 +17,7 @@ class Dog extends Animal {
 	}
 }
 
-class Cat extends Animal {
+class Cat_t extends Animal_t {
 	public void eat() {
 		System.out.println("猫吃鱼");
 	}
@@ -30,28 +30,28 @@ class Cat extends Animal {
 class DuoTaiTest {
 	public static void main(String[] args) {
 		//定义为狗
-		Animal a = new Dog();
+		Animal_t a = new Dog_t();
 		a.eat();
 		System.out.println("--------------");
 		//还原成狗
-		Dog d = (Dog)a;
+		Dog_t d = (Dog_t)a;
 		d.eat();
 		d.lookDoor();
 		System.out.println("--------------");
 		//变成猫
-		a = new Cat();
+		a = new Cat_t();
 		a.eat();
 		System.out.println("--------------");
 		//还原成猫
-		Cat c = (Cat)a;
+		Cat_t c = (Cat_t)a;
 		c.eat();
 		c.playGame();
 		System.out.println("--------------");
 		
 		//演示错误的内容
-		//Dog dd = new Animal();
-		//Dog ddd = new Cat();
+		//Dog_t dd = new Animal_t();
+		//Dog_t ddd = new Cat_t();
 		//ClassCastException
-		//Dog dd = (Dog)a;
+		//Dog_t dd = (Dog_t)a;
 	}
 }	

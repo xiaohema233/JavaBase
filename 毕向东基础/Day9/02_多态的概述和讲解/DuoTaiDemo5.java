@@ -2,11 +2,11 @@
 	ClassCastException:类型转换异常
 	一般在多态的向下转型中容易出现
 */
-class Animal {
+class Animal_5 {
 	public void eat(){}
 }
 
-class Dog extends Animal {
+class Dog_5 extends Animal_5 {
 	public void eat() {}
 	
 	public void lookDoor() {
@@ -14,7 +14,7 @@ class Dog extends Animal {
 	}
 }
 
-class Cat extends Animal {
+class Cat_5 extends Animal_5 {
 	public void eat() {
 	
 	}
@@ -27,14 +27,15 @@ class Cat extends Animal {
 class DuoTaiDemo5 {
 	public static void main(String[] args) {
 		//内存中的是狗
-		Animal a = new Dog();
-		Dog d = (Dog)a;
+		Animal_5 a = new Dog_5();
+		Dog_5 d = (Dog_5)a;
 		
 		//内存中是猫
-		a = new Cat();
-		Cat c = (Cat)a;
+		a = new Cat_5();
+		Cat_5 c = (Cat_5)a;
 		
 		//内存中是猫
-		Dog dd = (Dog)a; //ClassCastException
+//		a = new Dog_5();
+		Dog_5 dd = (Dog_5)a; //ClassCastException
 	}
 }

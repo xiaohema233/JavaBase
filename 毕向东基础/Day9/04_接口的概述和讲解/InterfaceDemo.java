@@ -22,11 +22,11 @@ interface AnimalTrain {
 }
 
 //抽象类实现接口
-abstract class Dog implements AnimalTrain {
+abstract class Dog_i1 implements AnimalTrain {
 }
 
 //具体类实现接口
-class Cat implements AnimalTrain {
+class Cat_i1 implements AnimalTrain {
 	public void jump() {
 		System.out.println("猫可以跳高了");
 	}
@@ -38,7 +38,7 @@ class InterfaceDemo {
 		//AnimalTrain at = new AnimalTrain();
 		//at.jump();
 		
-		AnimalTrain at = new Cat();
+		AnimalTrain at = new Cat_i1();
 		at.jump();
 	}
 }

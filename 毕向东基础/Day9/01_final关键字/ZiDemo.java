@@ -8,22 +8,22 @@
 	
 	final:最终的意思。常见的是它可以修饰类，方法，变量。
 */
-class Fu {
+class Fu_1 {
 	public final void show() {
 		System.out.println("这里是绝密资源,任何人都不能修改");
 	}
 }
 
-class Zi extends Fu {
+class Zi_1 extends Fu_1 {
 	// Zi中的show()无法覆盖Fu中的show()
-	public void show() {
-		System.out.println("这是一堆垃圾");
-	}
+//	public void show() {
+//		System.out.println("这是一堆垃圾");
+//	}
 }
 
 class ZiDemo {
 	public static void main(String[] args) {
-		Zi z = new Zi();
+		Zi_1 z = new Zi_1();
 		z.show();
 	}
 }

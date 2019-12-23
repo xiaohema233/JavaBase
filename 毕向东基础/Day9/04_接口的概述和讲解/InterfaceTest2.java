@@ -30,15 +30,15 @@ interface Smoking {
 }
 
 //定义抽象人类
-abstract class Person {
+abstract class Person_i {
 	//姓名
 	private String name;
 	//年龄
 	private int age;
 	
-	public Person() {}
+	public Person_i() {}
 	
-	public Person(String name,int age) {
+	public Person_i(String name,int age) {
 		this.name = name;
 		this.age = age;
 	}
@@ -69,10 +69,10 @@ abstract class Person {
 }
 
 //具体老师类
-class Teacher extends Person {
-	public Teacher() {}
+class Teacher_i extends Person_i {
+	public Teacher_i() {}
 	
-	public Teacher(String name,int age) {
+	public Teacher_i(String name,int age) {
 		super(name,age);
 	}
 	
@@ -82,10 +82,10 @@ class Teacher extends Person {
 }
 
 //具体学生类
-class Student extends Person {
-	public Student() {}
+class Student_i extends Person_i {
+	public Student_i() {}
 	
-	public Student(String name,int age) {
+	public Student_i(String name,int age) {
 		super(name,age);
 	}
 	
@@ -95,7 +95,7 @@ class Student extends Person {
 }
 
 //抽烟的老师
-class SmokingTeacher extends Teacher implements Smoking {
+class SmokingTeacher extends Teacher_i implements Smoking {
 	public SmokingTeacher() {}
 	
 	public SmokingTeacher(String name,int age) {
@@ -108,7 +108,7 @@ class SmokingTeacher extends Teacher implements Smoking {
 }
 
 //抽烟的学生
-class SmokingStudent extends Student implements Smoking {
+class SmokingStudent extends Student_i implements Smoking {
 	public SmokingStudent() {}
 	
 	public SmokingStudent(String name,int age) {

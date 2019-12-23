@@ -2,13 +2,13 @@
 	多态的弊端：
 		不能使用子类的特有功能。
 */
-class Fu {
+class Fu_3 {
 	public void show() {
 		System.out.println("show fu");
 	}
 }
 
-class Zi extends Fu {
+class Zi_3 extends Fu_3 {
 	public void show() {
 		System.out.println("show zi");
 	}
@@ -22,8 +22,9 @@ class Zi extends Fu {
 class DuoTaiDemo3 {
 	public static void main(String[] args) {
 		//测试
-		Fu f = new Zi();
+		Fu_3 f = new Zi_3();
 		f.show();
-		f.method();
+		//父类对象不能使用子类的特有功能。
+		//f.method();
 	}
 }

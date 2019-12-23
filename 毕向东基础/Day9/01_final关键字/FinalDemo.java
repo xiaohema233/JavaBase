@@ -15,19 +15,19 @@
 
 //final class Fu //无法从最终Fu进行继承
 
-class Fu {
+class Fu_D9_01 {
 	public int num = 10;
 	public final int num2 = 20;
 
 	/*
 	public final void show() {
-	
+
 	}
 	*/
 }
 
-class Zi extends Fu {
-	// Zi中的show()无法覆盖Fu中的show()
+class Zi_D9_01 extends Fu_D9_01 {
+	// 如果Fu中的show()为final Zi中的show()无法覆盖Fu中的show()
 	public void show() {
 		num = 100;
 		System.out.println(num);
@@ -40,7 +40,7 @@ class Zi extends Fu {
 
 class FinalDemo {
 	public static void main(String[] args) {
-		Zi z = new Zi();
+		Zi_D9_01 z = new Zi_D9_01();
 		z.show();
 	}
 }

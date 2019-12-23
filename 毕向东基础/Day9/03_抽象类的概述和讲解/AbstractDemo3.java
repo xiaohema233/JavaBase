@@ -8,7 +8,7 @@ abstract不能和哪些关键字共存?
 	final	冲突	
 	static	无意义
 */
-abstract class Fu {
+abstract class Fu_a3 {
 	//public abstract void show();
 	//非法的修饰符组合: abstract和private
 	//private abstract void show();
@@ -17,19 +17,19 @@ abstract class Fu {
 	//final abstract void show();	
 	
 	//非法的修饰符组合
-	static abstract void show();
+//	static abstract void show();
 	
 	public static void method() {
 		System.out.println("method");
 	}
 }
 
-class Zi extends Fu {
+class Zi_a3 extends Fu_a3 {
 	public void show() {}
 }
 
 class AbstractDemo3 {
 	public static void main(String[] args) {
-		Fu.method();
+		Fu_a3.method();
 	}
 }

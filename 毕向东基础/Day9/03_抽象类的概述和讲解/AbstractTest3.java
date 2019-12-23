@@ -21,7 +21,7 @@
 		就业班学员
 */
 //定义抽象学员类
-abstract class Student {
+abstract class Student_3 {
 	//姓名
 	private String name;
 	//年龄
@@ -29,9 +29,9 @@ abstract class Student {
 	//班级
 	private String grand;
 	
-	public Student() {}
+	public Student_3() {}
 	
-	public Student(String name,int age,String grand) {
+	public Student_3(String name,int age,String grand) {
 		this.name = name;
 		this.age = age;
 		this.grand = grand;
@@ -71,10 +71,10 @@ abstract class Student {
 }
 
 //具体基础班学员类
-class BasicStudent extends Student {
-	public BasicStudent() {}
+class BasicStudent_3 extends Student_3 {
+	public BasicStudent_3() {}
 	
-	public BasicStudent(String name,int age,String grand) {
+	public BasicStudent_3(String name,int age,String grand) {
 		super(name,age,grand);
 	}
 	
@@ -84,10 +84,10 @@ class BasicStudent extends Student {
 }
 
 //具体就业班学员类
-class WorkStudent extends Student {
-	public WorkStudent() {}
+class WorkStudent_3 extends Student_3 {
+	public WorkStudent_3() {}
 	
-	public WorkStudent(String name,int age,String grand) {
+	public WorkStudent_3(String name,int age,String grand) {
 		super(name,age,grand);
 	}
 	
@@ -100,7 +100,7 @@ class AbstractTest3 {
 	public static void main(String[] args) {
 		//我仅仅测试基础班学员
 		//按照多态的方式测试
-		Student s = new BasicStudent();
+		Student_3 s = new BasicStudent_3();
 		s.setName("林青霞");
 		s.setAge(27);
 		s.setGrand("1111");
@@ -109,7 +109,7 @@ class AbstractTest3 {
 		s.eat();
 		System.out.println("--------------");
 		
-		s = new BasicStudent("武鑫",48,"1111");
+		s = new BasicStudent_3("武鑫",48,"1111");
 		System.out.println(s.getName()+"---"+s.getAge()+"---"+s.getGrand());
 		s.study();
 		s.eat();
