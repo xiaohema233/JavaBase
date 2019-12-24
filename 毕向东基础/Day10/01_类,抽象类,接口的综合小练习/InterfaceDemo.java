@@ -15,13 +15,13 @@ interface SpeakEnglish {
 }
 
 //定义人的抽象类
-abstract class Person {
+abstract class Person_D10 {
 	private String name;
 	private int age;
 	
-	public Person() {}
+	public Person_D10() {}
 	
-	public Person(String name,int age) {
+	public Person_D10(String name,int age) {
 		this.name = name;
 		this.age = age;
 	}
@@ -52,7 +52,7 @@ abstract class Person {
 }
 
 //定义运动员抽象类
-abstract class Player extends Person {
+abstract class Player extends Person_D10 {
 	public Player() {}
 	
 	public Player(String name,int age) {
@@ -64,7 +64,7 @@ abstract class Player extends Person {
 }
 
 //定义教练抽象类
-abstract class Coach extends Person {
+abstract class Coach extends Person_D10 {
 	public Coach() {}
 	
 	public Coach(String name,int age) {

@@ -3,7 +3,7 @@
 		如何直接访问内部类的成员。
 		外部类名.内部类名 对象名 = 外部类对象.内部类对象;
 */
-class Outer {
+class Outer_i3 {
 	private int num = 10;
 	
 	class Inner {
@@ -20,7 +20,7 @@ class InnerClassDemo3 {
 		//i.show();
 		
 		//格式：外部类名.内部类名 对象名 = 外部类对象.内部类对象;
-		Outer.Inner oi = new Outer().new Inner();
+		Outer_i3.Inner oi = new Outer_i3().new Inner();
 		oi.show();
 	}
 }

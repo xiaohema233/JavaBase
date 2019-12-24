@@ -7,21 +7,21 @@
 			接口:返回的是该接口的实现类的对象
 */
 //定义一个爱好的接口
-interface Love {
+interface Love_2 {
 	public abstract void love();
 }
 
-class LoveDemo {
-	public Love getLove() {
+class LoveDemo_2 {
+	public Love_2 getLove() {
 		//Love l = new Teacher();
 		//return l;
 		
-		return new Teacher();
+		return new Teacher_2();
 	}
 }
 
 //定义具体类实现接口
-class Teacher implements Love {
+class Teacher_2 implements Love_2 {
 	public void love() {
 		System.out.println("老师爱学生,爱Java,爱林青霞");
 	}
@@ -30,8 +30,8 @@ class Teacher implements Love {
 class TeacherTest2 {
 	public static void main(String[] args) {
 		//如何测试呢?
-		LoveDemo ld = new LoveDemo();
-		Love l = ld.getLove(); //new Teacher(); Love l = new Teacher(); 多态
+		LoveDemo_2 ld = new LoveDemo_2();
+		Love_2 l = ld.getLove(); //new Teacher(); Love l = new Teacher(); 多态
 		l.love();
 	}
 }

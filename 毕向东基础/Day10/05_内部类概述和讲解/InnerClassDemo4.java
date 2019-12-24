@@ -28,7 +28,7 @@
 		Body b =  new Body();
 		b.method();
 */
-class Outer {
+class Outer_i4 {
 	private int num = 10;
 	private static int num2 = 100;
 	
@@ -56,11 +56,11 @@ class InnerClassDemo4 {
 		
 		//成员内部类被静态修饰后的访问方式是:
 		//格式：外部类名.内部类名 对象名 = new 外部类名.内部类名();
-		Outer.Inner oi = new Outer.Inner();
+		Outer_i4.Inner oi = new Outer_i4.Inner();
 		oi.show();
 		oi.show2();
 		
 		//show2()的另一种调用方式
-		Outer.Inner.show2();
+		Outer_i4.Inner.show2();
 	}
 }

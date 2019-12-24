@@ -12,12 +12,12 @@
 			加入final修饰后，这个变量就成了常量。既然是常量。你消失了。
 			我在内存中存储的是数据20，所以，我还是有数据在使用。
 */
-class Outer {
+class Outer_i5 {
 	private int num  = 10;
 	
 	public void method() {
 		//int num2 = 20;
-		//final int num2 = 20;
+		final int num2 = 20;
 		class Inner {
 			public void show() {
 				System.out.println(num);
@@ -35,7 +35,7 @@ class Outer {
 
 class InnerClassDemo5 {
 	public static void main(String[] args) {
-		Outer o = new Outer();
+		Outer_i5 o = new Outer_i5();
 		o.method();
 	}
 }

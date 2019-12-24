@@ -7,7 +7,7 @@
 		2:通过外部类名限定this对象
 			Outer.this
 */
-class Outer {
+class Outer_t {
 	public int num = 10;
 	class Inner {
 		public int num = 20;
@@ -16,13 +16,13 @@ class Outer {
 			System.out.println(num);
 			System.out.println(this.num);
 			//System.out.println(new Outer().num);
-			System.out.println(Outer.this.num);
+			System.out.println(Outer_t.this.num);
 		}
 	}
 }
 class InnerClassTest {
 	public static void main(String[] args) {
-		Outer.Inner oi = new Outer().new Inner();
+		Outer_t.Inner oi = new Outer_t().new Inner();
 		oi.show();
 	}	
 }

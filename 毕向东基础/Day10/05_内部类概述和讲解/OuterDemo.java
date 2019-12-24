@@ -10,16 +10,16 @@
 			}
 			要求在控制台输出”HelloWorld”
 */
-interface Inter { 
+interface Inter_d {
 	void show(); 
 	//public abstract
 }
 
-class Outer { 
+class Outer_d {
 	//补齐代码
-	public static Inter method() {
+	public static Inter_d method() {
 		//子类对象 -- 子类匿名对象
-		return new Inter() {
+		return new Inter_d() {
 			public void show() {
 				System.out.println("HelloWorld");
 			}
@@ -29,7 +29,7 @@ class Outer {
 
 class OuterDemo {
 	public static void main(String[] args) {
-		Outer.method().show();
+		Outer_d.method().show();
 		/*
 			1:Outer.method()可以看出method()应该是Outer中的一个静态方法。
 			2:Outer.method().show()可以看出method()方法的返回值是一个对象。

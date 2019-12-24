@@ -7,7 +7,7 @@
 	成员位置:在成员位置定义的类，被称为成员内部类。	
 		
 */
-class Outer {
+class Outer_i2 {
 	private int num = 10;
 
 	//成员位置

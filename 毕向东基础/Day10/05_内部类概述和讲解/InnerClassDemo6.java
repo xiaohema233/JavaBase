@@ -13,12 +13,12 @@
 	本质是什么呢?
 		是一个继承了该类或者实现了该接口的子类匿名对象。
 */
-interface Inter {
+interface Inter_i6 {
 	public abstract void show();
 	public abstract void show2();
 }
 
-class Outer {
+class Outer_i6 {
 	public void method() {
 		//一个方法的时候
 		/*
@@ -54,7 +54,7 @@ class Outer {
 		
 		//如果我是很多个方法，就很麻烦了
 		//那么，我们有没有改进的方案呢?
-		Inter i = new Inter() { //多态
+		Inter_i6 i = new Inter_i6() { //多态
 			public void show() {
 				System.out.println("show");
 			}
@@ -71,7 +71,7 @@ class Outer {
 
 class InnerClassDemo6 {
 	public static void main(String[] args) {
-		Outer o = new Outer();
+		Outer_i6 o = new Outer_i6();
 		o.method();
 	}
 }
