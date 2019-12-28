@@ -11,7 +11,7 @@ public class StringDemo2 {
 	public static void main(String[] args) {
 		String s1 = new String("hello");//记录的是堆内存对象的地址值
 		String s2 = "hello";//记录的是常量池中的地址值
-		
+
 //		String s1 = "hello";
 //		String s2 = "hello";
 

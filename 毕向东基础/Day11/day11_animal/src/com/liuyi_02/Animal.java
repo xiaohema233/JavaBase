@@ -1,12 +1,14 @@
 package com.liuyi_02;
 
+import com.liuyi_01.Jump;
+
 /**
  * 这是动物抽象类
  * 
  * @author 风清扬
  * @version V1.0
  */
-public abstract class Animal {
+public abstract class Animal{
 	/**
 	 * 这是吃饭的功能
 	 */

@@ -39,10 +39,13 @@ package cn.itcast_04;
  */
 public class StringTest2 {
 	public static void main(String[] args) {
-		//定义一个字符串
+		// 键盘录入一个字符串
+//		Scanner sc = new Scanner(System.in);
+//		String s = sc.nextLine();
+		// 定义一个字符串
 		String s = "Hello123World";
 		
-		//定义三个统计变量
+		// 定义三个统计变量
 		int bigCount = 0;
 		int smallCount = 0;
 		int numberCount = 0;

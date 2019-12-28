@@ -49,6 +49,7 @@ public class StringDemo {
 
 		String s4 = "";
 		String s5 = null;
+//		System.out.println(s4.equals(s5));
 		System.out.println("isEmpty:" + s4.isEmpty());
 		// NullPointerException
 		// s5对象都不存在，所以不能调用方法，空指针异常

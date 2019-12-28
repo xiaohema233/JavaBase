@@ -92,7 +92,7 @@ class PingPangPlayer extends Player implements SpeakEnglish {
 	public void study() {
 		System.out.println("乒乓球运动员学习如何发球和接球");
 	}
-	
+
 	//说英语
 	public void speak() {
 		System.out.println("乒乓球运动员说英语");
@@ -175,7 +175,14 @@ class InterfaceDemo {
 		ppp.speak();
 		System.out.println("----------------");
 		//通过带参构造给数据(留给你们)
-		
+		PingPangPlayer ppp2 = new PingPangPlayer("xhm",29);
+		System.out.println(ppp2.getName()+"---"+ppp2.getAge());
+		ppp2.eat();
+		ppp2.sleep();
+		ppp2.study();
+		ppp2.speak();
+		System.out.println("----------------");
+
 		//篮球运动员
 		BasketballPlayer bp = new BasketballPlayer();
 		bp.setName("姚明");
@@ -187,5 +194,12 @@ class InterfaceDemo {
 		//bp.speak(); //没有该方法
 		
 		//测试教练自己做
+		PingPangCoach ppc =new PingPangCoach();
+		ppc.setName("xhm");
+		ppc.setAge(29);
+		System.out.println(ppc.getName()+"---"+ppc.getAge());
+		ppc.eat();
+		ppc.sleep();
+		ppc.teach();
 	}
 }
